@@ -1,12 +1,25 @@
+#<IfModule mod_rewrite.c>
+#RewriteEngine On
+#RewriteBase /
+#RewriteRule ^index\.php$ - [L]
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule . /index.php [L]
+#</IfModule>
+
 <IfModule mod_rewrite.c>
-    RewriteEngine on
+    RewriteEngine On
+    
+    RewriteBase /
+    RewriteRule ^index\.php$ - [L]
 
     # if a directory or a file exists, use it directly
     RewriteCond %{REQUEST_FILENAME} !-f
-    # RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-d
 
     # otherwise forward it to index.php
-    RewriteRule . index.php
+    #RewriteRule . index.php
+    RewriteRule . /index.php [L]
 
     # deny access to hidden files and directories
     RewriteRule ^(.*/)?\.+ - [F]
@@ -16,4 +29,32 @@
 RedirectMatch 403 ^(.*/)?\.+
 
 # General setting to properly handle LimeSurvey paths
-# AcceptPathInfo on
+AcceptPathInfo on
+
+
+
+
+# Restringe el indice de archivos en los direcorios
+Options -Indexes
+
+# Restringe acceso al directorio .git
+RedirectMatch 404 /\.git
+
+# Restringe acceso a los archivos .htaccess y .htpasswd
+RedirectMatch 404 /\.ht
+
+# Restringe acceso a los logs
+#RedirectMatch 404 /log
+#RedirectMatch 404 /logs
+
+# Restringe acceso a archivos
+RedirectMatch 404 /license\.txt
+RedirectMatch 404 "(.*)readme\.(txt|html)$"
+RedirectMatch 404 "(.*)\.md$"
+
+# Restringe acceso a los log
+RedirectMatch 404 "(.*)(\.|_)log$"
+
+# Restringe el acceso a los changelogs
+RedirectMatch 404 "(.*)changelog\.(txt|html)$"
+
