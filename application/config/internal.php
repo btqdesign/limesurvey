@@ -130,6 +130,7 @@ $internalConfig = array(
             'class'=>'LSHttpRequest',
             'enableCsrfValidation'=>true, // CSRF protection
             'enableCookieValidation'=>false, // Enable to activate cookie protection
+            'noCsrfValidationParams'=>array(),
             'noCsrfValidationRoutes'=>array(
                 'remotecontrol',
                 'plugins/unsecure',
@@ -239,7 +240,7 @@ $internalConfig = array(
                 'getAllQuestionClasses'   => 'LS_Twig_Extension::getAllQuestionClasses',
                 'intval'                  => 'intval',
                 'empty'                   => 'empty',
-                'count'                   => 'count',
+                'count'                   => 'LS_Twig_Extension::safecount',
                 'reset'                   => 'reset',
                 'in_array'                => 'in_array',
                 'in_multiarray'           => 'LS_Twig_Extension::in_multiarray',

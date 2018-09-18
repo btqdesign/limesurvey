@@ -112,23 +112,23 @@ class questions extends Survey_Common_Action
 
         // Last question visited : By user (only one by user)
         $setting_entry = 'last_question_'.Yii::app()->user->getId();
-        setGlobalSetting($setting_entry, $qid);
+        SettingGlobal::setSetting($setting_entry, $qid);
 
         // we need to set the sid for this question
         $setting_entry = 'last_question_sid_'.Yii::app()->user->getId();
-        setGlobalSetting($setting_entry, $iSurveyID);
+        SettingGlobal::setSetting($setting_entry, $iSurveyID);
 
         // we need to set the gid for this question
         $setting_entry = 'last_question_gid_'.Yii::app()->user->getId();
-        setGlobalSetting($setting_entry, $gid);
+        SettingGlobal::setSetting($setting_entry, $gid);
 
         // Last question for this survey (only one by survey, many by user)
         $setting_entry = 'last_question_'.Yii::app()->user->getId().'_'.$iSurveyID;
-        setGlobalSetting($setting_entry, $qid);
+        SettingGlobal::setSetting($setting_entry, $qid);
 
         // we need to set the gid for this question
         $setting_entry = 'last_question_'.Yii::app()->user->getId().'_'.$iSurveyID.'_gid';
-        setGlobalSetting($setting_entry, $gid);
+        SettingGlobal::setSetting($setting_entry, $gid);
 
         $aData['surveyIsActive'] = $survey->active !== 'N';
 
@@ -1099,7 +1099,7 @@ class questions extends Survey_Common_Action
         $aData['copying'] = false;
 
         $aData['aqresult'] = '';
-        $aData['action'] = 'addquestion';
+        $aData['action'] = 'newquestion';
 
         ///////////
         // sidemenu
@@ -1165,9 +1165,10 @@ class questions extends Survey_Common_Action
             // if (isset($_POST['sortorder']))
             //     $postsortorder = sanitize_int($_POST['sortorder']);
 
-            $aData['adding'] = $adding = $action == 'addquestion';
+            $aData['adding'] = $adding = $action == 'newquestion';
             $aData['copying'] = $copying = $action == 'copyquestion';
-            $aData['subaction'] = $copying ? gT('Copy question') : gT('Add a new question');
+            $aData['editing'] = $editing = $action == 'editquestion';
+            $aData['subaction'] = $copying ? gT('Copy question') : ($editing ? gT('Edit question') : gT('Add a new question'));
 
             $questlangs = $oSurvey->additionalLanguages;
             $baselang = $oSurvey->language;
