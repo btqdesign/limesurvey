@@ -5,4 +5,3 @@
         static protected $description = 'BTQ Design NPS Plugin';
         static protected $name = 'btqnps';
     }
-}
