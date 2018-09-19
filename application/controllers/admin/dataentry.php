@@ -1040,6 +1040,27 @@ class dataentry extends Survey_Common_Action
                             $fname = prev($fnames);
                             $aDataentryoutput .= "</table>\n";
                             break;
+                        case "B1": //ARRAY (10 POINT CHOICE) radio-buttons
+                            $aDataentryoutput .= "<table class='table'>\n";
+                            $thisqid = $fname['qid'];
+                            while ($fname['qid'] == $thisqid) {
+                                $aDataentryoutput .= "\t<tr>\n"
+                                ."<td align='right'>{$fname['subquestion']}</td>\n"
+                                ."<td>\n";
+                                for ($j = 1; $j <= 10; $j++) {
+                                    $aDataentryoutput .= '<span class="ten-point">';
+                                    $aDataentryoutput .= "\t<input type='radio' class='' name='{$fname['fieldname']}' id='ten-point-{$fname['fieldname']}-$j' value='$j'";
+                                    if ($idrow[$fname['fieldname']] == $j) {$aDataentryoutput .= " checked"; }
+                                    $aDataentryoutput .= " /><label for='ten-point-{$fname['fieldname']}-$j'>$j</label>&nbsp;\n";
+                                    $aDataentryoutput .= '</span>';
+                                }
+                                $aDataentryoutput .= "</td>\n"
+                                ."\t</tr>\n";
+                                $fname = next($fnames);
+                            }
+                            $fname = prev($fnames);
+                            $aDataentryoutput .= "</table>\n";
+                            break;
                         case "C": //ARRAY (YES/UNCERTAIN/NO) radio-buttons
                             $aDataentryoutput .= "<table class='table'>\n";
                             $thisqid = $fname['qid'];
@@ -2002,6 +2023,12 @@ class dataentry extends Survey_Common_Action
 
                             break;
                         case "B": //ARRAY (10 POINT CHOICE) radio-buttons
+                            $meaquery = "SELECT title, question FROM {{questions}} WHERE parent_qid={$deqrow['qid']} AND language='{$sDataEntryLanguage}' ORDER BY question_order";
+                            $mearesult = dbExecuteAssoc($meaquery);
+                            $cdata['mearesult'] = $mearesult->readAll();
+                            break;
+
+                        case "B1": //ARRAY (10 POINT CHOICE) radio-buttons
                             $meaquery = "SELECT title, question FROM {{questions}} WHERE parent_qid={$deqrow['qid']} AND language='{$sDataEntryLanguage}' ORDER BY question_order";
                             $mearesult = dbExecuteAssoc($meaquery);
                             $cdata['mearesult'] = $mearesult->readAll();
