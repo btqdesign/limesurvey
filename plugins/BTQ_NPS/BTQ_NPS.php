@@ -1,8 +1,8 @@
 <?php
 
-class BtqNPS extends \LimeSurvey\PluginManager\PluginBase
+class BTQ_NPS extends \LimeSurvey\PluginManager\PluginBase
 {
-    static protected $name = 'BTQ NPS';
+    static protected $name = 'btq_nps';
     static protected $description = 'BTQ Design NPS Question';
 
     public function init()
@@ -10,6 +10,7 @@ class BtqNPS extends \LimeSurvey\PluginManager\PluginBase
         $this->subscribe('beforeSurveyPage');
         $this->subscribe('afterSavedResponse');
         $this->subscribe('beforeActivate');
+        $this->subscribe('beforeAdminMenuRender');
     }
 
     public function beforeSurveyPage()
@@ -50,5 +51,30 @@ class BtqNPS extends \LimeSurvey\PluginManager\PluginBase
                 )
             );
         }
+    }
+
+    public function beforeAdminMenuRender()
+    {
+        // Create the URL to the plugin action
+        $url = $this->api->createUrl(
+            'admin/pluginhelper',
+            array(
+                'sa'     => 'fullpagewrapper',
+                'plugin' => $this->getName(),
+                'method' => 'actionIndex'  // Method name in our plugin
+            )
+        );
+
+        // Append menu
+        $event = $this->getEvent();
+        $event->append(
+            'extraMenus', 
+            array(
+                new Menu(array(
+                    'label' => 'Menu label',
+                    'href'  => $url
+                ))
+            )
+        );
     }
 }
