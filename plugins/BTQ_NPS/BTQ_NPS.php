@@ -59,7 +59,7 @@ class BTQ_NPS extends \LimeSurvey\PluginManager\PluginBase
         //Check if the menu/menu entries are already created use yii database methods for that
         
         $menuArray = array(
-            "parent_id" => 1, //1 -> main surveymenu, 2-> quickemenu, NULL -> new base menu in sidebar
+            "parent_id" => 2, //1 -> main surveymenu, 2-> quickemenu, NULL -> new base menu in sidebar
             "name" => "btq_nps",
             "title" => "BTQ NPS Title",
             "position" => "side", // possible positions are "side" and "collapsed" state 3.0.0.beta-2
