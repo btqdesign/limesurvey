@@ -53,28 +53,31 @@ class BTQ_NPS extends \LimeSurvey\PluginManager\PluginBase
         }
     }
 
-    public function beforeAdminMenuRender()
+    public function beforeToolsMenuRender()
     {
-        // Create the URL to the plugin action
-        $url = $this->api->createUrl(
-            'admin/pluginhelper',
-            array(
-                'sa'     => 'fullpagewrapper',
-                'plugin' => $this->getName(),
-                'method' => 'actionIndex'  // Method name in our plugin
-            )
-        );
-
-        // Append menu
         $event = $this->getEvent();
-        $event->append(
-            'extraMenus', 
+        $surveyId = $event->get('surveyId');
+        $href = Yii::app()->createUrl(
+            'admin/pluginhelper',  // Call the plugin helper controller
             array(
-                new Menu(array(
-                    'label' => 'Menu label',
-                    'href'  => $url
-                ))
+                'sa' => 'sidebody',  // subaction is "sidebody"
+                'plugin' => 'BTQ_NPS',  // Name of this plugin
+                'method' => 'actionIndex',  // Plugin action that PluginHelper will call
+                'surveyId' => $surveyId
             )
         );
+        // TODO: Class ExtraMenuItem is not part of core yet
+        $menuItem = new ExtraMenuItem(array(
+            'label' => 'BTQ NPS',
+            'iconClass' => 'fa fa-table',
+            'href' => $href
+        ));
+        $event->set('menuItems', array($menuItem));
+    }
+    
+    public function actionIndex()
+    {
+        // TODO: Add view and layout
+        return "This is the content of the side-body";
     }
 }
