@@ -1860,6 +1860,11 @@ class dataentry extends Survey_Common_Action
                         $cdata['hh'] = $hh;
                     }
                     switch ($deqrow['type']) {
+                        case "B1": //ARRAY (10 POINT CHOICE) radio-buttons
+                            $meaquery = "SELECT title, question FROM {{questions}} WHERE parent_qid={$deqrow['qid']} AND language='{$sDataEntryLanguage}' ORDER BY question_order";
+                            $mearesult = dbExecuteAssoc($meaquery);
+                            $cdata['mearesult'] = $mearesult->readAll();
+                            break;
                         case "Q": //MULTIPLE SHORT TEXT
                         case "K":
                             $deaquery = "SELECT question,title FROM {{questions}} WHERE parent_qid={$deqrow['qid']} AND language='{$sDataEntryLanguage}' ORDER BY question_order";
@@ -2023,12 +2028,6 @@ class dataentry extends Survey_Common_Action
 
                             break;
                         case "B": //ARRAY (10 POINT CHOICE) radio-buttons
-                            $meaquery = "SELECT title, question FROM {{questions}} WHERE parent_qid={$deqrow['qid']} AND language='{$sDataEntryLanguage}' ORDER BY question_order";
-                            $mearesult = dbExecuteAssoc($meaquery);
-                            $cdata['mearesult'] = $mearesult->readAll();
-                            break;
-
-                        case "B1": //ARRAY (10 POINT CHOICE) radio-buttons
                             $meaquery = "SELECT title, question FROM {{questions}} WHERE parent_qid={$deqrow['qid']} AND language='{$sDataEntryLanguage}' ORDER BY question_order";
                             $mearesult = dbExecuteAssoc($meaquery);
                             $cdata['mearesult'] = $mearesult->readAll();
