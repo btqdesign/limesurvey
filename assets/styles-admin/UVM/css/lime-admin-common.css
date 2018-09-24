@@ -3254,3 +3254,9 @@ input[type="file"].form-control {
 .custom.custom-margin-responsive.small.bottom-35 {
   margin-bottom: 35px;
 }
+
+
+body{
+  background-image: url("../images/pattern_trama.png");
+  background-repeat: repeat;
+}
