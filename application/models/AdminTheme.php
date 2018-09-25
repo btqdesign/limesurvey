@@ -83,10 +83,10 @@ class AdminTheme extends CFormModel
         // - user deleted a custom theme
         // In any case, we just set Sea Green as the template to use
         if (!is_dir($sTemplateDir.DIRECTORY_SEPARATOR.$sAdminThemeName)) {
-            $sAdminThemeName   = 'Sea_Green';
+            $sAdminThemeName   = 'UVM';
             $sTemplateDir      = $sStandardTemplateRootDir;
             $sTemplateUrl      = Yii::app()->getConfig('styleurl').DIRECTORY_SEPARATOR.$sAdminThemeName;
-            SettingGlobal::setSetting('admintheme', 'Sea_Green');
+            SettingGlobal::setSetting('admintheme', 'UVM');
         }
 
         // Now that we are sure we have an existing template, we can set the variables of the AdminTheme
@@ -361,15 +361,8 @@ class AdminTheme extends CFormModel
     {
         return in_array($sAdminThemeName,
             array(
-                'Apple_Blossom',
-                'Bay_of_Many',
-                'Black_Pearl',
-                'Dark_Sky',
-                'Free_Magenta',
-                'Noto_All_Languages',
-                'Purple_Tentacle',
                 'Sea_Green',
-                'Sunset_Orange',
+                'UVM'
             )
         );
     }

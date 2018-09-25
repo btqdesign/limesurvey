@@ -61,22 +61,24 @@ foreach($systemInfos as &$systemInfo) {
 
             <!-- Support / Donate -->
             <div  class="col-xs-6 col-sm-4 text-center"  >
-                <a href='http://donate.limesurvey.org' target="_blank">
+                <a href='https://www.universidaduvm.mx/' target="_blank">
                     <img alt='<?php printf(gT("Support this project - Donate to %s!"),'LimeSurvey'); ?>' title='<?php printf(gT("Support this project - Donate to %s!"),'LimeSurvey'); ?>' src='<?php echo Yii::app()->getConfig('adminimageurl');?>donate.png'/>
                 </a>
             </div>
 
             <!-- Lime survey website -->
+	    <!--
             <div class="col-xs-12 col-sm-4 text-right">
-                <a  title='<?php eT("Visit our website!"); ?>' href='https://www.limesurvey.org' target='_blank'>LimeSurvey</a><br />
-                <?php if(Permission::model()->hasGlobalPermission('superadmin','read')) { ?> 
+                <a  title='<?php eT("Visit our website!"); ?>' href='https://www.universidaduvm.mx/' target='_blank'>UVM</a><br />
+                <?php /* if(Permission::model()->hasGlobalPermission('superadmin','read')) { ?> 
                     <a href="#modalSystemInformation" data-toggle="modal" title="<?=gT("Get system information")?>"> 
                 <?php } ?>
                 <?php echo $versiontitle."  ".$versionnumber.$buildtext;?>
                 <?php if(Permission::model()->hasGlobalPermission('superadmin','read')) { ?>
                     </a> 
-                <?php } ?>
-            </div>
+		<?php } */ ?>
+	    </div>
+            -->
         </div>
     </div>
 </footer>

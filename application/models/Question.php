@@ -498,6 +498,15 @@ class Question extends LSActiveRecord
                 'answerscales' => 0,
                 'class' => 'array-10-pt'
             ),
+            "B1" => array(
+                'description' => gT("NPS Question", "html", $language),
+                'group' => gT('NPS'),
+                'subquestions' => 1,
+                'hasdefaultvalues' => 0,
+                'assessable' => 1,
+                'answerscales' => 0,
+                'class' => 'array-10-pt'
+            ),
             "C" => array(
                 'description' => gT("Array (Yes/No/Uncertain)", "html", $language),
                 'group' => gT('Arrays'),
