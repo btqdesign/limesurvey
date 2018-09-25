@@ -3335,4 +3335,5 @@ input[type="file"].form-control {
 body {
   background-image: url("/assets/images/pattern_trama.jpg");
   background-repeat: repeat-y;
+  background-position: center top;
 }
