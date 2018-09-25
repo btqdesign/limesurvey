@@ -3264,6 +3264,6 @@ input[type="file"].form-control {
 
 body {
   background-image: url("/assets/images/pattern_trama.jpg");
-  background-repeat: repeat-y;
+  background-repeat: repeat-x;
   background-position: center top;
 }
