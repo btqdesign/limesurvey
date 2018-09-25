@@ -246,7 +246,13 @@ html {
   z-index: 1000; }
 
 .tab-content {
-  padding-top: 2em; }
+  padding-top: 2em; 
+  background-color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-left: 1px solid #dadada;
+  border-right: 1px solid #dadada;
+  border-bottom: 1px solid #dadada; }
 
 :focus {
   outline: none; }
