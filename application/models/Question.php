@@ -767,6 +767,7 @@ class Question extends LSActiveRecord
             case '5': return 'choice-5-pt-radio';
             case 'A': return 'array-5-pt';
             case 'B': return 'array-10-pt';
+            case 'B1': return 'array-10-pt';
             case 'C': return 'array-yes-uncertain-no';
             case 'D': return 'date';
             case 'E': return 'array-increase-same-decrease';
@@ -1079,7 +1080,7 @@ class Question extends LSActiveRecord
     /** @return string[] */
     public static function getQuotableTypes()
     {
-        return array('G', 'M', 'Y', 'A', 'B', 'I', 'L', 'O', '!', '*');
+        return array('G', 'M', 'Y', 'A', 'B', 'B1', 'I', 'L', 'O', '!', '*');
     }
 
 
