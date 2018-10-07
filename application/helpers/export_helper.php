@@ -394,6 +394,7 @@ function SPSSFieldMap($iSurveyID, $prefix = 'V', $sLanguage = '')
     $typeMap = array(
         '5'=>Array('name'=>'5 Point Choice', 'size'=>1, 'SPSStype'=>'F', 'Scale'=>3),
         'B'=>Array('name'=>'Array (10 Point Choice)', 'size'=>1, 'SPSStype'=>'F', 'Scale'=>3),
+        'B1'=>Array('name'=>'NPS', 'size'=>1, 'SPSStype'=>'F', 'Scale'=>3),
         'A'=>Array('name'=>'Array (5 Point Choice)', 'size'=>1, 'SPSStype'=>'F', 'Scale'=>3),
         'F'=>Array('name'=>'Array (Flexible Labels)', 'size'=>1, 'SPSStype'=>'F'),
         '1'=>Array('name'=>'Array (Flexible Labels) Dual Scale', 'size'=>1, 'SPSStype'=>'F'),
@@ -1686,6 +1687,11 @@ function quexml_export($surveyi, $quexmllan, $iResponseID = false)
                         $question->appendChild($response);
                         break;
                     case "B": //ARRAY (10 POINT CHOICE) radio-buttons
+                        quexml_create_subQuestions($question, $qid, $sgq, $iResponseID, $fieldmap);
+                        $response->appendChild(QueXMLFixedArray(array("1" => 1, "2" => 2, "3" => 3, "4" => 4, "5" => 5, "6" => 6, "7" => 7, "8" => 8, "9" => 9, "10" => 10)));
+                        $question->appendChild($response);
+                        break;
+                    case "B1": //ARRAY (10 POINT CHOICE) radio-buttons
                         quexml_create_subQuestions($question, $qid, $sgq, $iResponseID, $fieldmap);
                         $response->appendChild(QueXMLFixedArray(array("1" => 1, "2" => 2, "3" => 3, "4" => 4, "5" => 5, "6" => 6, "7" => 7, "8" => 8, "9" => 9, "10" => 10)));
                         $question->appendChild($response);

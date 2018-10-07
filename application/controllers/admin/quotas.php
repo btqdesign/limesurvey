@@ -557,6 +557,17 @@ class quotas extends Survey_Common_Action
                     $aAnswerList[$aDbAnsList['code']."-".$x] = $tmparrayans;
                 }
             }
+        } elseif ($aQuestionType == 'B1') {
+            $aAnsResults = Answer::model()->findAllByAttributes(array('qid' => $iQuestionId, 'language' => $sBaseLang));
+
+            $aAnswerList = array();
+
+            foreach ($aAnsResults as $aDbAnsList) {
+                for ($x = 1; $x < 11; $x++) {
+                    $tmparrayans = array('Title' => $aQuestion['title'], 'Display' => substr($aDbAnsList['answer'], 0, 40).' ['.$x.']', 'code' => $aDbAnsList['code']);
+                    $aAnswerList[$aDbAnsList['code']."-".$x] = $tmparrayans;
+                }
+            }
         } elseif ($aQuestionType == 'Y') {
             $aAnswerList = array(
                 'Y' => array('Title' => $aQuestion['title'], 'Display' => gT("Yes"), 'code' => 'Y'),

@@ -297,6 +297,7 @@ class printablesurvey extends Survey_Common_Action
                                     break;
                                     case "A":
                                     case "B":
+                                    case "B1":
                                     case ":":
                                     case ";":
                                     case "5":
@@ -380,6 +381,7 @@ class printablesurvey extends Survey_Common_Action
                                 switch ($conrow['type']) {
                                     case "A":
                                     case "B":
+                                    case "B1":
                                     case "C":
                                     case "E":
                                     case "F":
@@ -884,6 +886,35 @@ class printablesurvey extends Survey_Common_Action
 
                                 // ==================================================================
                             case "B":  //ARRAY (10 POINT CHOICE)
+
+                                $question['type_help'] .= CHtml::tag("div", array("class"=>"tip-help"), gT("Please choose the appropriate response for each item:"));
+                                $question['type_help'] .= self::_array_filter_help($qidattributes, $sLanguageCode, $surveyid);
+                                $answerwidth = (trim($qidattributes['answer_width']) != '') ? $qidattributes['answer_width'] : 33;
+                                $question['answer'] .= "\n<table class='table-print-answers table table-bordered'>\n\t<thead>\n\t\t<tr>\n";
+                                $question['answer'] .= "\t\t\t<td style='width:{$answerwidth}%'><span></span></td>\n";
+                                for ($i = 1; $i <= 10; $i++) {
+                                    $question['answer'] .= "\t\t\t<th>$i".self::_addsgqacode(" ($i)")."</th>\n";
+                                }
+                                $question['answer'] .= "\t</tr></thead>\n\n\t<tbody>\n";
+                                $j = 0;
+                                $rowclass = 'ls-odd';
+                                $mearesult = Question::model()->getAllRecords(" parent_qid='{$deqrow['qid']}' AND language='{$sLanguageCode}' ", array('question_order'));
+                                foreach ($mearesult->readAll() as $mearow) {
+
+                                    $question['answer'] .= "\t\t<tr class=\"$rowclass\">\n\t\t\t<th class=\"answertext\">{$mearow['question']}".self::_addsgqacode(" (".$fieldname.$mearow['title'].")")."</th>\n";
+                                    $rowclass = alternation($rowclass, 'row');
+
+                                    for ($i = 1; $i <= 10; $i++) {
+                                        $question['answer'] .= "\t\t\t<td>".self::_input_type_image('radio', $i)."</td>\n";
+                                    }
+                                    $question['answer'] .= "\t\t</tr>\n";
+                                    $j++;
+                                }
+                                $question['answer'] .= "\t</tbody>\n</table>\n";
+                                break;
+
+                                // ==================================================================
+                            case "B1":  //ARRAY (10 POINT CHOICE)
 
                                 $question['type_help'] .= CHtml::tag("div", array("class"=>"tip-help"), gT("Please choose the appropriate response for each item:"));
                                 $question['type_help'] .= self::_array_filter_help($qidattributes, $sLanguageCode, $surveyid);

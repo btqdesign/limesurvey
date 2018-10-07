@@ -1209,6 +1209,24 @@ class statistics_helper
                     break;
 
 
+                    
+                    //Array of 10 point choices
+                    //same as above just with 10 items
+                case "B1":
+                $qquery = "SELECT title, question FROM {{questions}} WHERE parent_qid='$qiqid' AND title='$qanswer' AND language='{$language}' ORDER BY question_order";
+                $qresult = Yii::app()->db->createCommand($qquery)->query();
+                foreach ($qresult->readAll() as $qrow) {
+                    $qrow = array_values($qrow);
+                    for ($i = 1; $i <= 10; $i++) {
+                        $alist[] = array("$i", "$i");
+                    }
+                    $atext = flattenText($qrow[1]);
+                }
+
+                $qquestion .= $linefeed;
+                $qtitle .= "($qanswer)"."[".$atext."]";
+                break;
+
 
                     //Array of Yes/No/gT("Uncertain")
                 case "C":

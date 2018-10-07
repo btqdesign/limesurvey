@@ -134,7 +134,7 @@ function checkQuestions($postsid, $iSurveyID, $qtypes)
     //  # "O" -> LIST WITH COMMENT
     //  # "M" -> Multiple choice
     //    # "P" -> Multiple choice with comments
-    //    # "A", "B", "C", "E", "F", "H", "^" -> Various Array Types
+    //    # "A", "B", "B1", "C", "E", "F", "H", "^" -> Various Array Types
     //  # "R" -> RANKING
     //  # "U" -> FILE CSV MORE
     //  # "I" -> LANGUAGE SWITCH

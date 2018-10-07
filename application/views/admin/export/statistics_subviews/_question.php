@@ -420,6 +420,42 @@
                 }
                 break;
 
+            //just like above only a different loop
+            case "B1": // ARRAY OF 10 POINT CHOICE QUESTIONS
+                echo '<h4 class="question-selector-title">'.$oStatisticsHelper::_showSpeaker($niceqtext).'</h4><br/>';
+                foreach($result[$key1] as $row)
+                {
+                    $row=array_values($row);
+                    $myfield2 = $myfield . "$row[0]";
+                    echo "<!-- $myfield2 - ";
+
+                    if (isset($_POST[$myfield2])) {echo htmlspecialchars($_POST[$myfield2]);}
+
+                    echo " -->\n";
+                    echo '<div class="statistics-responses-label-group ls-space padding bottom-5 top-15 ls-flex-item">';
+
+                    echo "<input type='checkbox'  name='summary[]' value='$myfield2'";
+
+                    if (isset($summary) && array_search($myfield2, $summary)!== FALSE) {echo " checked='checked'";}
+
+                    echo " />&nbsp;"
+                    .'<strong>'.$oStatisticsHelper::_showSpeaker($niceqtext." ".str_replace("'", "`", $row[1])." - # ".$flt[3]).'</strong>'
+                    ."</div>\n"
+                    ."\t<select name='{$surveyid}X{$flt[1]}X{$flt[0]}{$row[0]}[]' multiple='multiple' class='form-control'>\n";
+
+                    //here wo loop through 10 entries to create a larger output form
+                    for ($i=1; $i<=10; $i++)
+                    {
+                        echo "\t<option value='$i'";
+                        if (isset($_POST[$myfield2]) && is_array($_POST[$myfield2]) && in_array($i, $_POST[$myfield2])) {echo " selected='selected' ";}
+                        if (isset($_POST[$myfield2]) && $_POST[$myfield2] == $i) {echo " selected='selected' ";}
+                        echo ">$i</option>\n";
+                    }
+
+                    echo "\t</select>\n\t";
+                }
+                break;
+
 
 
             case "C": // ARRAY OF YES\No\gT("Uncertain") QUESTIONS

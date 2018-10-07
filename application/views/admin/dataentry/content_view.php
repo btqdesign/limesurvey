@@ -695,6 +695,30 @@ echo viewHelper::getViewTestTag('dataEntryView');
         <?php break;
 
 
+        //ARRAY (10 POINT CHOICE) radio-buttons
+        case "B1":  ?>
+        <div class="col-sm-10">
+        <table>
+            <?php foreach ($mearesult as $mearow)
+                { ?>
+                <tr>
+                    <td align='right'><?php echo $mearow['question']; ?></td>
+                    <td>
+                        <select name='<?php echo $fieldname.$mearow['title']; ?>'  class='form-control'>
+                            <option value=''><?php eT("Please choose",'html',$sDataEntryLanguage); ?>..</option>
+                            <?php for ($i=1; $i<=10; $i++)
+                                { ?>
+                                <option value='<?php echo $i; ?>'><?php echo $i; ?></option>
+                                <?php } ?>
+                        </select>
+                    </td>
+                </tr>
+                <?php } ?>
+        </table>
+        </div>
+        <?php break;
+
+
         //ARRAY (YES/UNCERTAIN/NO) radio-buttons
         case "C":
         ?>

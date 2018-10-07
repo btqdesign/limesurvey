@@ -226,6 +226,10 @@ function retrieveAnswers($ia)
         case 'B': //ARRAY (10 POINT CHOICE) radio-buttons
             $values = do_array_10point($ia);
             break;
+        
+        case 'B1': //ARRAY (10 POINT CHOICE) radio-buttons
+            $values = do_array_10point($ia);
+            break;
 
         case 'C': //ARRAY (YES/UNCERTAIN/NO) radio-buttons
             $values = do_array_yesnouncertain($ia);
@@ -4412,7 +4416,7 @@ function do_array_texts($ia)
     if ($aQuestionAttributes['numbers_only'] == 1) {
         $checkconditionFunction = "fixnum_checkconditions";
 
-        if (in_array($aQuestionAttributes['show_totals'], array("R", "C", "B"))) {
+        if (in_array($aQuestionAttributes['show_totals'], array("R", "C", "B", "B1"))) {
             $q_table_id      = 'totals_'.$ia[0];
             $q_table_id_HTML = ' id="'.$q_table_id.'"';
         }
@@ -4451,6 +4455,22 @@ function do_array_texts($ia)
                 break;
 
             case 'B':
+                $totals_class = $show_totals = 'both';
+                $row_total    = doRender('/survey/questions/answer/arrays/texts/rows/cells/td_total', array('empty'=>false, 'inputsize'=>$inputsize), true);
+                $col_total    = doRender('/survey/questions/answer/arrays/texts/columns/col_total', array('empty'=>false, 'inputsize'=>$inputsize, 'label'=>false), true);
+                $col_head     = doRender('/survey/questions/answer/arrays/texts/rows/cells/thead', array('totalText'=>gT('Total'), 'classes'=>''), true);
+                $row_head     = doRender('/survey/questions/answer/arrays/texts/rows/cells/thead', array('totalText'=>gT('Total'), 'classes'=>'answertext'), true);
+
+                if ($show_grand == true) {
+                    $grand_total = doRender('/survey/questions/answer/arrays/texts/rows/cells/td_grand_total', array('empty'=>false, 'inputsize'=>$inputsize), true);
+                } else {
+                    $grand_total = doRender('/survey/questions/answer/arrays/texts/rows/cells/td_grand_total', array('empty'=>true, 'inputsize'=>$inputsize), true);
+                };
+
+                $caption .= gT("The last row shows the total for the column and the last column shows the total for the row.");
+                break;
+            
+            case 'B1':
                 $totals_class = $show_totals = 'both';
                 $row_total    = doRender('/survey/questions/answer/arrays/texts/rows/cells/td_total', array('empty'=>false, 'inputsize'=>$inputsize), true);
                 $col_total    = doRender('/survey/questions/answer/arrays/texts/columns/col_total', array('empty'=>false, 'inputsize'=>$inputsize, 'label'=>false), true);

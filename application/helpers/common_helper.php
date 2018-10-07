@@ -1302,6 +1302,7 @@ function createCompleteSGQA($iSurveyID, $aFilters, $sLanguage)
                 break;
             case "A": // ARRAY OF 5 POINT CHOICE QUESTIONS
             case "B": // ARRAY OF 10 POINT CHOICE QUESTIONS
+            case "B1": // ARRAY OF 10 POINT CHOICE QUESTIONS
             case "C": // ARRAY OF YES\No\gT("Uncertain") QUESTIONS
             case "E": // ARRAY OF Increase/Same/Decrease QUESTIONS
             case "F": // FlEXIBLE ARRAY
