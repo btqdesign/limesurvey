@@ -212,7 +212,7 @@ class __TwigTemplate_cb19a2671218f33d0f8ca822ba2f3a75c288c0e6a54c9e0f3b89d90980f
         echo " >
                     ";
         // line 72
-        echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(LS_Twig_Extension::image("poweredby.png", "LimeSurvey Survey Software"));
+        echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(LS_Twig_Extension::image("poweredby.png", "UVM"));
         echo "
                 </a>
 

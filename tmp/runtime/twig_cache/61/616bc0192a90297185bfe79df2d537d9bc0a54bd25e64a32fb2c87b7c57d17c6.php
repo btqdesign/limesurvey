@@ -343,7 +343,7 @@ class __TwigTemplate_ff9202739071864ef500502d68b240aff010e202d0d57ee0e1b5b0b8914
         echo " class=\"center-block text-center\">
                                         ";
         // line 169
-        echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(LS_Twig_Extension::image("./files/poweredby.png", "LimeSurvey Survey Software", array("class" => "img-responsive center-block ")));
+        echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(LS_Twig_Extension::image("./files/poweredby.png", "UVM", array("class" => "img-responsive center-block ")));
         echo "
                                     </a>
                                 </div>
