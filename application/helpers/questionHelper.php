@@ -110,7 +110,7 @@ class questionHelper
         );
 
         self::$attributes["array_filter_style"] = array(
-            "types"=>"1ABCEF:;MPLKQR",
+            "types"=>"1ABCEF:;MPLKQR"."B1",
             'category'=>gT('Logic'),
             'sortorder'=>100,
             'inputtype'=>'buttongroup',
