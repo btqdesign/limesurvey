@@ -512,7 +512,7 @@ class questionHelper
         // End Map Options
 
         self::$attributes["hide_tip"] = array(
-            "types"=>"15ABCDEFGHIKLMNOPQRSTUXY!:;|",
+            "types"=>"15ABCDEFGHIKLMNOPQRSTUXY!:;|"."B1",
             'category'=>gT('Display'),
             'sortorder'=>100,
             'inputtype'=>'switch',
