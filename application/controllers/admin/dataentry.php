@@ -1040,7 +1040,7 @@ class dataentry extends Survey_Common_Action
                             $fname = prev($fnames);
                             $aDataentryoutput .= "</table>\n";
                             break;
-                        case "B1": //ARRAY (10 POINT CHOICE) radio-buttons
+                        case "V": //ARRAY (10 POINT CHOICE) radio-buttons
                             $aDataentryoutput .= "<table class='table'>\n";
                             $thisqid = $fname['qid'];
                             while ($fname['qid'] == $thisqid) {
@@ -1860,7 +1860,7 @@ class dataentry extends Survey_Common_Action
                         $cdata['hh'] = $hh;
                     }
                     switch ($deqrow['type']) {
-                        case "B1": //ARRAY (10 POINT CHOICE) radio-buttons
+                        case "V": //ARRAY (10 POINT CHOICE) radio-buttons
                             $meaquery = "SELECT title, question FROM {{questions}} WHERE parent_qid={$deqrow['qid']} AND language='{$sDataEntryLanguage}' ORDER BY question_order";
                             $mearesult = dbExecuteAssoc($meaquery);
                             $cdata['mearesult'] = $mearesult->readAll();
@@ -2033,7 +2033,7 @@ class dataentry extends Survey_Common_Action
                             $cdata['mearesult'] = $mearesult->readAll();
                             break;
 
-                        case "B1": //ARRAY (10 POINT CHOICE) radio-buttons
+                        case "V": //ARRAY (10 POINT CHOICE) radio-buttons
                             $meaquery = "SELECT title, question FROM {{questions}} WHERE parent_qid={$deqrow['qid']} AND language='{$sDataEntryLanguage}' ORDER BY question_order";
                             $mearesult = dbExecuteAssoc($meaquery);
                             $cdata['mearesult'] = $mearesult->readAll();

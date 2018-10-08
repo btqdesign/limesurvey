@@ -1209,10 +1209,10 @@ class statistics_helper
                     break;
 
 
-                    
+
                     //Array of 10 point choices
                     //same as above just with 10 items
-                case "B1":
+                case "V":
                 $qquery = "SELECT title, question FROM {{questions}} WHERE parent_qid='$qiqid' AND title='$qanswer' AND language='{$language}' ORDER BY question_order";
                 $qresult = Yii::app()->db->createCommand($qquery)->query();
                 foreach ($qresult->readAll() as $qrow) {

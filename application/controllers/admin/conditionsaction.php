@@ -1344,7 +1344,7 @@ protected function getCAnswersAndCQuestions(array $theserows)
     foreach ($theserows as $rows) {
         $shortquestion = $rows['title'].": ".strip_tags($rows['question']);
         
-        if ($rows['type'] == "A" || $rows['type'] == "B" || $rows['type'] == "B1" || $rows['type'] == "C" || $rows['type'] == "E" || $rows['type'] == "F" || $rows['type'] == "H") {
+        if ($rows['type'] == "A" || $rows['type'] == "B" || $rows['type'] == "V" || $rows['type'] == "C" || $rows['type'] == "E" || $rows['type'] == "F" || $rows['type'] == "H") {
             
             $aresult = Question::model()->findAllByAttributes(array('parent_qid'=>$rows['qid'], 'language' => $this->language), array('order' => 'question_order ASC'));
             
@@ -1361,7 +1361,7 @@ protected function getCAnswersAndCQuestions(array $theserows)
                         //Array 10 buttons
                     case "B": for ($i = 1; $i <= 10; $i++) { $canswers[] = array($rows['sid'].$X.$rows['gid'].$X.$rows['qid'].$arows['title'], $i, $i); } break;
                         //Array Y/N/NA
-                    case "B1": for ($i = 1; $i <= 10; $i++) { $canswers[] = array($rows['sid'].$X.$rows['gid'].$X.$rows['qid'].$arows['title'], $i, $i); } break;
+                    case "V": for ($i = 1; $i <= 10; $i++) { $canswers[] = array($rows['sid'].$X.$rows['gid'].$X.$rows['qid'].$arows['title'], $i, $i); } break;
                         //Array Y/N/NA
                     case "C":
                         $canswers[] = array($rows['sid'].$X.$rows['gid'].$X.$rows['qid'].$arows['title'], "Y", gT("Yes"));

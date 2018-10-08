@@ -60,7 +60,7 @@ class questionHelper
         "caption"=>gT('Sort answers alphabetically'));
 
         self::$attributes["answer_width"] = array(
-            "types"=>"ABCEF1:;"."B1",
+            "types"=>"ABCEF1:;"."V",
             'category'=>gT('Display'),
             'sortorder'=>100,
             'inputtype'=>'integer',
@@ -92,7 +92,7 @@ class questionHelper
         );
 
         self::$attributes["array_filter"] = array(
-            "types"=>"1ABCEF:;MPLKQR"."B1",
+            "types"=>"1ABCEF:;MPLKQR"."V",
             'category'=>gT('Logic'),
             'sortorder'=>100,
             'inputtype'=>'text',
@@ -101,7 +101,7 @@ class questionHelper
         );
 
         self::$attributes["array_filter_exclude"] = array(
-            "types"=>"1ABCEF:;MPLKQR"."B1",
+            "types"=>"1ABCEF:;MPLKQR"."V",
             'category'=>gT('Logic'),
             'sortorder'=>100,
             'inputtype'=>'text',
@@ -110,7 +110,7 @@ class questionHelper
         );
 
         self::$attributes["array_filter_style"] = array(
-            "types"=>"1ABCEF:;MPLKQR"."B1",
+            "types"=>"1ABCEF:;MPLKQR"."V",
             'category'=>gT('Logic'),
             'sortorder'=>100,
             'inputtype'=>'buttongroup',
@@ -292,7 +292,7 @@ class questionHelper
         );
 
         self::$attributes["em_validation_q"] = array(
-            "types"=>":;ABCDEFHKMNOPQRSTU"."L!"."B1", // separate question with REAL subqs (in EM) and with FALSE subsq (where subqs are answer …)
+            "types"=>":;ABCDEFHKMNOPQRSTU"."L!"."V", // separate question with REAL subqs (in EM) and with FALSE subsq (where subqs are answer …)
             'category'=>gT('Logic'),
             'sortorder'=>200,
             'inputtype'=>'textarea',
@@ -302,7 +302,7 @@ class questionHelper
         );
 
         self::$attributes["em_validation_q_tip"] = array(
-            "types"=>":;ABCDEFHKMNOPQRSTU"."L!"."B1", // separate question with subqs (in EM) and without
+            "types"=>":;ABCDEFHKMNOPQRSTU"."L!"."V", // separate question with subqs (in EM) and without
             'category'=>gT('Logic'),
             'sortorder'=>210,
             'inputtype'=>'textarea',
@@ -334,7 +334,7 @@ class questionHelper
         );
 
         self::$attributes["exclude_all_others"] = array(
-            "types"=>"ABCEFMPKQ"."B1",
+            "types"=>"ABCEFMPKQ"."V",
             'category'=>gT('Logic'),
             'sortorder'=>130,
             'inputtype'=>'text',
@@ -415,7 +415,7 @@ class questionHelper
         );
 
         self::$attributes["statistics_showgraph"] = array(
-            'types'=>'15ABCDEFGHIKLMNOPQRSTUWXYZ!:;|*'."B1",
+            'types'=>'15ABCDEFGHIKLMNOPQRSTUWXYZ!:;|*'."V",
             'category'=>gT('Statistics'),
             'inputtype'=>'switch',
             'sortorder'=>101,
@@ -426,7 +426,7 @@ class questionHelper
         );
 
         self::$attributes["statistics_graphtype"] = array(
-            "types"=>'15ABCDEFGHIKLMNOQRSTUWXYZ!:;|*'."B1",
+            "types"=>'15ABCDEFGHIKLMNOQRSTUWXYZ!:;|*'."V",
             'category'=>gT('Statistics'),
             'inputtype'=>'singleselect',
             'sortorder'=>102,
@@ -512,7 +512,7 @@ class questionHelper
         // End Map Options
 
         self::$attributes["hide_tip"] = array(
-            "types"=>"15ABCDEFGHIKLMNOPQRSTUXY!:;|"."B1",
+            "types"=>"15ABCDEFGHIKLMNOPQRSTUXY!:;|"."V",
             'category'=>gT('Display'),
             'sortorder'=>100,
             'inputtype'=>'switch',
@@ -523,7 +523,7 @@ class questionHelper
         );
 
         self::$attributes['hidden'] = array(
-            'types'=>'15ABCDEFGHIKLMNOPQRSTUWXYZ!:;|*'."B1",
+            'types'=>'15ABCDEFGHIKLMNOPQRSTUWXYZ!:;|*'."V",
             'category'=>gT('Display'),
             'sortorder'=>101,
             'inputtype'=>'switch',
@@ -534,7 +534,7 @@ class questionHelper
         );
 
         self::$attributes['cssclass'] = array(
-            'types'=>'15ABCDEFGHIKLMNOPQRSTUWXYZ!:;|*'."B1",
+            'types'=>'15ABCDEFGHIKLMNOPQRSTUWXYZ!:;|*'."V",
             'category'=>gT('Display'),
             'sortorder'=>102,
             'inputtype'=>'text',
@@ -544,7 +544,7 @@ class questionHelper
         );
 
         self::$attributes["max_answers"] = array(
-            "types"=>"MPR1:;ABCEFKQ"."B1",
+            "types"=>"MPR1:;ABCEFKQ"."V",
             'category'=>gT('Logic'),
             'sortorder'=>11,
             'inputtype'=>'text',
@@ -596,7 +596,7 @@ class questionHelper
         );
 
         self::$attributes["min_answers"] = array(
-            "types"=>"MPR1:;ABCEFKQ"."B1",
+            "types"=>"MPR1:;ABCEFKQ"."V",
             'category'=>gT('Logic'),
             'sortorder'=>10,
             'inputtype'=>'text',
@@ -781,7 +781,7 @@ class questionHelper
         );
 
         self::$attributes["page_break"] = array(
-            "types"=>"15ABCDEFGHKLMNOPQRSTUWXYZ!:;|*"."B1",
+            "types"=>"15ABCDEFGHKLMNOPQRSTUWXYZ!:;|*"."V",
             'category'=>gT('Other'),
             'sortorder'=>100,
             'inputtype'=>'switch',
@@ -803,7 +803,7 @@ class questionHelper
         );
 
         self::$attributes["printable_help"] = array(
-            "types"=>"15ABCDEFGHKLMNOPRWYZ!:*"."B1",
+            "types"=>"15ABCDEFGHKLMNOPRWYZ!:*"."V",
             'category'=>gT('Display'),
             'sortorder'=>201,
             "inputtype"=>"text",
@@ -815,7 +815,7 @@ class questionHelper
         );
 
         self::$attributes["public_statistics"] = array(
-            "types"=>"15ABCEFGHKLMNOPRWYZ!:*"."B1",
+            "types"=>"15ABCEFGHKLMNOPRWYZ!:*"."V",
             'category'=>gT('Statistics'),
             'sortorder'=>80,
             'inputtype'=>'switch',
@@ -826,7 +826,7 @@ class questionHelper
         );
 
         self::$attributes["random_order"] = array(
-            "types"=>"!ABCEFHKLMOPQRWZ1:;"."B1",
+            "types"=>"!ABCEFHKLMOPQRWZ1:;"."V",
             'category'=>gT('Display'),
             'sortorder'=>100,
             'inputtype'=>'singleselect',
@@ -1508,7 +1508,7 @@ class questionHelper
         );
 
         self::$attributes["random_group"] = array(
-            "types"=>"15ABCDEFGHIKLMNOPQRSTUWXYZ!:;|"."B1",
+            "types"=>"15ABCDEFGHIKLMNOPQRSTUWXYZ!:;|"."V",
             'category'=>gT('Logic'),
             'sortorder'=>180,
             'inputtype'=>'text',
@@ -1562,7 +1562,7 @@ class questionHelper
         );
 
         self::$attributes["question_template"] = array(
-            "types"=>"15ABCDEFGHIKLMNOPQRSTUWXYZ!:;|"."B1",
+            "types"=>"15ABCDEFGHIKLMNOPQRSTUWXYZ!:;|"."V",
             'category'=>gT('Display'),
             'sortorder'=>100,
             'inputtype'=>'question_template',

@@ -498,7 +498,7 @@ class Question extends LSActiveRecord
                 'answerscales' => 0,
                 'class' => 'array-10-pt'
             ),
-            "B1" => array(
+            "V" => array(
                 'description' => gT("NPS Question", "html", $language),
                 'group' => gT('NPS'),
                 'subquestions' => 1,
@@ -767,7 +767,7 @@ class Question extends LSActiveRecord
             case '5': return 'choice-5-pt-radio';
             case 'A': return 'array-5-pt';
             case 'B': return 'array-10-pt';
-            case 'B1': return 'array-10-pt';
+            case 'V': return 'array-10-pt';
             case 'C': return 'array-yes-uncertain-no';
             case 'D': return 'date';
             case 'E': return 'array-increase-same-decrease';
@@ -1080,7 +1080,7 @@ class Question extends LSActiveRecord
     /** @return string[] */
     public static function getQuotableTypes()
     {
-        return array('G', 'M', 'Y', 'A', 'B', 'B1', 'I', 'L', 'O', '!', '*');
+        return array('G', 'M', 'Y', 'A', 'B', 'V', 'I', 'L', 'O', '!', '*');
     }
 
 

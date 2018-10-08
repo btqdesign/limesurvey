@@ -106,7 +106,7 @@ class QuotaMember extends LSActiveRecord
                     $sFieldName = $this->sid.'X'.$this->question->gid.'X'.$this->qid.$temp[0];
                     $sValue = $temp[1];
                     break;
-                case "B1":
+                case "V":
                     $temp = explode('-', $this->code);
                     $sFieldName = $this->sid.'X'.$this->question->gid.'X'.$this->qid.$temp[0];
                     $sValue = $temp[1];

@@ -421,7 +421,7 @@
                 break;
 
             //just like above only a different loop
-            case "B1": // ARRAY OF 10 POINT CHOICE QUESTIONS
+            case "V": // ARRAY OF 10 POINT CHOICE QUESTIONS
                 echo '<h4 class="question-selector-title">'.$oStatisticsHelper::_showSpeaker($niceqtext).'</h4><br/>';
                 foreach($result[$key1] as $row)
                 {

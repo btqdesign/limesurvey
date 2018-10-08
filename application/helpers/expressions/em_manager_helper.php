@@ -1167,7 +1167,7 @@
                                 case ';': //ARRAY (Multi Flexi) Text
                                 case 'A': //ARRAY (5 POINT CHOICE) radio-buttons
                                 case 'B': //ARRAY (10 POINT CHOICE) radio-buttons
-                                case 'B1': //ARRAY (10 POINT CHOICE) radio-buttons
+                                case 'V': //ARRAY (10 POINT CHOICE) radio-buttons
                                 case 'C': //ARRAY (YES/UNCERTAIN/NO) radio-buttons
                                 case 'E': //ARRAY (Increase/Same/Decrease) radio-buttons
                                 case 'F': //ARRAY (Flexible) - Row Format
@@ -1362,7 +1362,7 @@
                                 break;
                             case 'A': //ARRAY (5 POINT CHOICE) radio-buttons
                             case 'B': //ARRAY (10 POINT CHOICE) radio-buttons
-                            case 'B1': //ARRAY (10 POINT CHOICE) radio-buttons
+                            case 'V': //ARRAY (10 POINT CHOICE) radio-buttons
                             case 'C': //ARRAY (YES/UNCERTAIN/NO) radio-buttons
                             case 'E': //ARRAY (Increase/Same/Decrease) radio-buttons
                             case 'F': //ARRAY (Flexible) - Row Format
@@ -1847,7 +1847,7 @@
                                     case ':': //ARRAY (Multi Flexi) 1 to 10
                                     case 'A': //ARRAY (5 POINT CHOICE) radio-buttons
                                     case 'B': //ARRAY (10 POINT CHOICE) radio-buttons
-                                    case 'B1': //ARRAY (10 POINT CHOICE) radio-buttons
+                                    case 'V': //ARRAY (10 POINT CHOICE) radio-buttons
                                     case 'C': //ARRAY (YES/UNCERTAIN/NO) radio-buttons
                                     case 'E': //ARRAY (Increase/Same/Decrease) radio-buttons
                                     case 'F': //ARRAY (Flexible) - Row Format
@@ -2028,7 +2028,7 @@
                                 case ';': //ARRAY (Multi Flexi) Text
                                 case 'A': //ARRAY (5 POINT CHOICE) radio-buttons
                                 case 'B': //ARRAY (10 POINT CHOICE) radio-buttons
-                                case 'B1': //ARRAY (10 POINT CHOICE) radio-buttons
+                                case 'V': //ARRAY (10 POINT CHOICE) radio-buttons
                                 case 'C': //ARRAY (YES/UNCERTAIN/NO) radio-buttons
                                 case 'E': //ARRAY (Increase/Same/Decrease) radio-buttons
                                 case 'F': //ARRAY (Flexible) - Row Format
@@ -2115,7 +2115,7 @@
                                 case ';': //ARRAY (Multi Flexi) Text
                                 case 'A': //ARRAY (5 POINT CHOICE) radio-buttons
                                 case 'B': //ARRAY (10 POINT CHOICE) radio-buttons
-                                case 'B1': //ARRAY (10 POINT CHOICE) radio-buttons
+                                case 'V': //ARRAY (10 POINT CHOICE) radio-buttons
                                 case 'C': //ARRAY (YES/UNCERTAIN/NO) radio-buttons
                                 case 'E': //ARRAY (Increase/Same/Decrease) radio-buttons
                                 case 'F': //ARRAY (Flexible) - Row Format
@@ -2995,7 +2995,7 @@
                             switch ($type) {
                                 case 'A': //ARRAY (5 POINT CHOICE) radio-buttons
                                 case 'B': //ARRAY (10 POINT CHOICE) radio-buttons
-                                case 'B1': //ARRAY (10 POINT CHOICE) radio-buttons
+                                case 'V': //ARRAY (10 POINT CHOICE) radio-buttons
                                 case 'C': //ARRAY (YES/UNCERTAIN/NO) radio-buttons
                                 case 'E': //ARRAY (Increase/Same/Decrease) radio-buttons
                                 case 'F': //ARRAY (Flexible) - Row Format
@@ -3813,7 +3813,7 @@
                         break;
                     case 'A': //ARRAY (5 POINT CHOICE) radio-buttons
                     case 'B': //ARRAY (10 POINT CHOICE) radio-buttons
-                    case 'B1': //ARRAY (10 POINT CHOICE) radio-buttons
+                    case 'V': //ARRAY (10 POINT CHOICE) radio-buttons
                     case ':': //ARRAY (Multi Flexi) 1 to 10
                     case '5': //5 POINT CHOICE radio-buttons
                         $ansArray=NULL;
@@ -3902,7 +3902,7 @@
                         break;
                     case 'A': //ARRAY (5 POINT CHOICE) radio-buttons
                     case 'B': //ARRAY (10 POINT CHOICE) radio-buttons
-                    case 'B1': //ARRAY (10 POINT CHOICE) radio-buttons
+                    case 'V': //ARRAY (10 POINT CHOICE) radio-buttons
                     case 'C': //ARRAY (YES/UNCERTAIN/NO) radio-buttons
                     case 'E': //ARRAY (Increase/Same/Decrease) radio-buttons
                     case 'F': //ARRAY (Flexible) - Row Format
@@ -4035,7 +4035,7 @@
                     case '*': //Equation
                     case 'A': //ARRAY (5 POINT CHOICE) radio-buttons
                     case 'B': //ARRAY (10 POINT CHOICE) radio-buttons
-                    case 'B1': //ARRAY (10 POINT CHOICE) radio-buttons
+                    case 'V': //ARRAY (10 POINT CHOICE) radio-buttons
                     case 'C': //ARRAY (YES/UNCERTAIN/NO) radio-buttons
                     case 'E': //ARRAY (Increase/Same/Decrease) radio-buttons
                     case 'F': //ARRAY (Flexible) - Row Format
@@ -6399,7 +6399,7 @@
                                 }
                             case 'A': //ARRAY (5 POINT CHOICE) radio-buttons
                             case 'B': //ARRAY (10 POINT CHOICE) radio-buttons
-                            case 'B1': //ARRAY (10 POINT CHOICE) radio-buttons
+                            case 'V': //ARRAY (10 POINT CHOICE) radio-buttons
                             case 'C': //ARRAY (YES/UNCERTAIN/NO) radio-buttons
                             case 'E': //ARRAY (Increase/Same/Decrease) radio-buttons
                             case 'F': //ARRAY (Flexible) - Row Format
@@ -6581,7 +6581,7 @@
                         break;
                     case 'A':
                     case 'B':
-                    case 'B1':
+                    case 'V':
                     case 'C':
                     case 'Q':
                     case 'K':
@@ -9209,7 +9209,7 @@ report~numKids > 0~message~{name}, you said you are {age} and that you have {num
                                 break;
                             case 'A': //ARRAY (5 POINT CHOICE) radio-buttons
                             case 'B': //ARRAY (10 POINT CHOICE) radio-buttons
-                            case 'B1': //ARRAY (10 POINT CHOICE) radio-buttons
+                            case 'V': //ARRAY (10 POINT CHOICE) radio-buttons
                             case ':': //ARRAY (Multi Flexi) 1 to 10
                             case '5': //5 POINT CHOICE radio-buttons
                                 $shown = $code;
@@ -10202,7 +10202,7 @@ report~numKids > 0~message~{name}, you said you are {age} and that you have {num
                             return false;
                         }
                         break;
-                    case 'B1': // Array 10 point
+                    case 'V': // Array 10 point
                         if(!in_array($value,array("1","2","3","4","5","6","7","8","9","10")))
                         {
                             $LEM->invalidAnswerString[$sgq]=sprintf(gT("%s is an invalid value for this question"),htmlspecialchars($value));

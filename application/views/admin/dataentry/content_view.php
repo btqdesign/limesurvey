@@ -696,7 +696,7 @@ echo viewHelper::getViewTestTag('dataEntryView');
 
 
         //ARRAY (10 POINT CHOICE) radio-buttons
-        case "B1":  ?>
+        case "V":  ?>
         <div class="col-sm-10">
         <table>
             <?php foreach ($mearesult as $mearow)

@@ -521,7 +521,7 @@ class QuestionTemplate extends CFormModel
             "5" => '5pointchoice',
             "A" => 'arrays/5point',
             "B" => 'arrays/10point',
-            "B1" => 'arrays/10point',
+            "V" => 'arrays/10point',
             "C" => 'arrays/yesnouncertain',
             "D" => 'date',
             "E" => 'arrays/increasesamedecrease',

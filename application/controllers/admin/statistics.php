@@ -333,7 +333,7 @@ class statistics extends Survey_Common_Action
                     break;
 
                    //just like above only a different loop
-                case "B1": // ARRAY OF 10 POINT CHOICE QUESTIONS
+                case "V": // ARRAY OF 10 POINT CHOICE QUESTIONS
                    $result = Question::model()->getQuestionsForStatistics('title, question', "parent_qid=$flt[0] AND language = '{$language}'", 'question_order');
                    $aData['result'][$key1] = $result;
                    break;
@@ -723,7 +723,7 @@ class statistics extends Survey_Common_Action
                 case "H": // ARRAY (By Column)
                 case "E":
                 case "B":
-                case "B1":
+                case "V":
                 case "C":
                     //loop through all answers. if there are 3 items to rate there will be 3 statistics
                     $qid = $row['qid'];

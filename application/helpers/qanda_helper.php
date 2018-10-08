@@ -227,7 +227,7 @@ function retrieveAnswers($ia)
             $values = do_array_10point($ia);
             break;
         
-        case 'B1': //ARRAY (10 POINT CHOICE) radio-buttons
+        case 'V': //ARRAY (10 POINT CHOICE) radio-buttons
             $values = do_array_10point($ia);
             break;
 
@@ -4416,7 +4416,7 @@ function do_array_texts($ia)
     if ($aQuestionAttributes['numbers_only'] == 1) {
         $checkconditionFunction = "fixnum_checkconditions";
 
-        if (in_array($aQuestionAttributes['show_totals'], array("R", "C", "B", "B1"))) {
+        if (in_array($aQuestionAttributes['show_totals'], array("R", "C", "B", "V"))) {
             $q_table_id      = 'totals_'.$ia[0];
             $q_table_id_HTML = ' id="'.$q_table_id.'"';
         }
@@ -4470,7 +4470,7 @@ function do_array_texts($ia)
                 $caption .= gT("The last row shows the total for the column and the last column shows the total for the row.");
                 break;
             
-            case 'B1':
+            case 'V':
                 $totals_class = $show_totals = 'both';
                 $row_total    = doRender('/survey/questions/answer/arrays/texts/rows/cells/td_total', array('empty'=>false, 'inputsize'=>$inputsize), true);
                 $col_total    = doRender('/survey/questions/answer/arrays/texts/columns/col_total', array('empty'=>false, 'inputsize'=>$inputsize, 'label'=>false), true);

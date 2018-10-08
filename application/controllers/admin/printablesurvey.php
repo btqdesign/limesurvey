@@ -297,7 +297,7 @@ class printablesurvey extends Survey_Common_Action
                                     break;
                                     case "A":
                                     case "B":
-                                    case "B1":
+                                    case "V":
                                     case ":":
                                     case ";":
                                     case "5":
@@ -381,7 +381,7 @@ class printablesurvey extends Survey_Common_Action
                                 switch ($conrow['type']) {
                                     case "A":
                                     case "B":
-                                    case "B1":
+                                    case "V":
                                     case "C":
                                     case "E":
                                     case "F":
@@ -914,7 +914,7 @@ class printablesurvey extends Survey_Common_Action
                                 break;
 
                                 // ==================================================================
-                            case "B1":  //ARRAY (10 POINT CHOICE)
+                            case "V":  //ARRAY (10 POINT CHOICE)
 
                                 $question['type_help'] .= CHtml::tag("div", array("class"=>"tip-help"), gT("Please choose the appropriate response for each item:"));
                                 $question['type_help'] .= self::_array_filter_help($qidattributes, $sLanguageCode, $surveyid);
