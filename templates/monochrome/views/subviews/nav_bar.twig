@@ -28,6 +28,7 @@
             <span class="icon-bar"></span>
         </button>
 
+        <!--
         {# Logo option #}
         {% if( aSurveyInfo.options.brandlogo == "on") %}
             <div class="{{ aSurveyInfo.class.navbarbrand }} logo-container"  {{ aSurveyInfo.attr.navbarbrand }}  >
@@ -38,6 +39,10 @@
                 {{ aSurveyInfo.name }}
             </div>
         {% endif %}
+        -->
+        <div class="{{ aSurveyInfo.class.navbarbrand }} logo-container hidden-xs"  {{ aSurveyInfo.attr.navbarbrand }}  >
+            <img src="{{ aSurveyInfo.oTemplate.sTemplateurl }}files/logo.png" class="logo img-responsive">
+        </div>
     </div>
     <div id="{{ aSurveyInfo.id.navbar }}" class="{{ aSurveyInfo.class.navbarcollapse }}" {{ aSurveyInfo.attr.navbarcollapse }} >
         <ul class="{{ aSurveyInfo.class.navbarlink }} navbar-right" {{ aSurveyInfo.attr.navbarlink }}>
