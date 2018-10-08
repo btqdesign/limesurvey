@@ -636,7 +636,7 @@ function LEMval(alias)
                 case 'K': //MULTIPLE NUMERICAL QUESTION
                 case 'A': //ARRAY (5 POINT CHOICE) radio-buttons
                 case 'B': //ARRAY (10 POINT CHOICE) radio-buttons
-                case 'B1': //ARRAY (10 POINT CHOICE) radio-buttons
+                case 'V': //ARRAY (10 POINT CHOICE) radio-buttons
                 case ':': //ARRAY (Multi Flexi) 1 to 10
                 case '5': //5 POINT CHOICE radio-buttons
                 case 'Q': //MULTIPLE SHORT TEXT
