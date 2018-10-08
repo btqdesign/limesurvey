@@ -3337,3 +3337,8 @@ body {
   background-repeat: repeat-x;
   background-position: center top;
 }
+
+.side-body {
+  background-color: white;
+  padding: 5px;
+}
