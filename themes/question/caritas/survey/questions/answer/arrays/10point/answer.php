@@ -12,6 +12,7 @@
 <!-- Array 10 point choice -->
 
 <!-- answer -->
+platnilla php
 <table class="<?php echo $coreClass; ?> table table-bordered table-hover table-10-point-array" role="group" aria-labelledby="ls-question-text-<?php echo $basename ?>">
     <!-- Columns -->
     <colgroup class="col-responses">
