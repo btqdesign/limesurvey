@@ -22,10 +22,8 @@ table.ls-answers {
 <tr class="answer_cell_{{ i }}{% if i=="" %} noanswer-item{% endif %} answer-item radio-item" width='200px'>
 
  <td>
- <label for="answer{{ myfname }}-{{ i }}"  class="ls-label-xs-visibility">
-       carita
-    </label>
-
+ 
+carita
     <input
         type="radio"
         name="{{ myfname }}"
@@ -33,7 +31,9 @@ table.ls-answers {
         value="{{ value }}"
         {{ CHECKED }}
      />
-    
+    <label for="answer{{ myfname }}-{{ i }}"  class="ls-label-xs-visibility">
+        {{ labelText }}
+    </label>
  </td>
 </tr>
 <!-- end of answer_td_input -->
