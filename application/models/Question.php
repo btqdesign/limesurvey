@@ -498,7 +498,7 @@ class Question extends LSActiveRecord
                 'answerscales' => 0,
                 'class' => 'array-10-pt'
             ),
-            "R" => array(
+            "V" => array(
                 'description' => gT("NPS", "html", $language),
                 'group' => gT("Mask questions"),
                 'subquestions' => 0,
