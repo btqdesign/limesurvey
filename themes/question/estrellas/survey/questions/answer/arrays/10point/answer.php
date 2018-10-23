@@ -12,15 +12,22 @@
 <!-- Array 10 point choice -->
 
 <!-- answer -->
-platnilla php
 <table class="<?php echo $coreClass; ?> table table-bordered table-hover table-10-point-array" role="group" aria-labelledby="ls-question-text-<?php echo $basename ?>">
     <!-- Columns -->
     <colgroup class="col-responses">
         <col class="col-answers" style='width: <?php echo $answerwidth; ?>%;' />
-      
+        <?php
+            // columns/col.php
+            echo $sColumns;
+        ?>
     </colgroup>
     <thead aria-hidden="true">
-      
+        <tr class="ls-heading">
+            <?php
+                // rows/cell/thead.php
+                echo $sHeaders;
+            ?>
+        </tr>
     </thead>
     <tbody>
         <?php
