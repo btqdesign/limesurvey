@@ -29,9 +29,9 @@
         <js>
             <filename>scripts/advanced_ranking.js</filename>
         </js>
-         <images>
-            <filename>images/V.png</filename>
-        </images>
+        <preview>
+            <filename>V.png</filename>
+        </preview>
     </files>
 
     <custom_attributes>
