@@ -43,12 +43,7 @@
                 <li class="hidden ls-remove"></li>
             </ul>
         </div>
-        <div class="col-sm-6 col-xs-6">
-            <strong class="sortable-subtitle sortable-rank-subtitle"><?php echo $choice_title;?></strong>
-            <ul id="sortable-rank-<?php echo $qId;?>" class="sortable-rank sortable-list list-group">
-                <li class="hidden ls-remove"></li>
-            </ul>
-        </div>
+      
     </div>
 </div>
 
