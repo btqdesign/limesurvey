@@ -499,13 +499,13 @@ class Question extends LSActiveRecord
                 'class' => 'array-10-pt'
             ),
             "V" => array(
-                'description' => gT("NPS Question", "html", $language),
-                'group' => gT('NPS'),
-                'subquestions' => 1,
+                'description' => gT("Ranking", "html", $language),
+                'group' => gT("Mask questions"),
+                'subquestions' => 0,
                 'hasdefaultvalues' => 0,
                 'assessable' => 1,
-                'answerscales' => 0,
-                'class' => 'array-10-pt'
+                'answerscales' => 1,
+                'class' => 'ranking'
             ),
             "C" => array(
                 'description' => gT("Array (Yes/No/Uncertain)", "html", $language),
