@@ -1,4 +1,4 @@
-{#
+<?php
 /**
  * array 10 point choice Html
  *
@@ -8,26 +8,32 @@
  * @var $extraclass
  * @var $answerwidth
  */
-#}
+?>
 <!-- Array 10 point choice -->
 
 <!-- answer -->
-<table class="{{ coreClass }} table table-bordered table-hover table-10-point-array" role="group" aria-labelledby="ls-question-text-{{ basename }}">
+<table class="<?php echo $coreClass; ?> table table-bordered table-hover table-10-point-array" role="group" aria-labelledby="ls-question-text-<?php echo $basename ?>">
     <!-- Columns -->
     <colgroup class="col-responses">
-        <col class="col-answers" style='width: {{ answerwidth }}%;' />
-            {# columns/col.php #}
-            {{ sColumns }}
+        <col class="col-answers" style='width: <?php echo $answerwidth; ?>%;' />
+        <?php
+            // columns/col.php
+            echo $sColumns;
+        ?>
     </colgroup>
     <thead aria-hidden="true">
         <tr class="ls-heading">
-                {# rows/cell/thead.php #}
-                {{ sHeaders }}
+            <?php
+                // rows/cell/thead.php
+                echo $sHeaders;
+            ?>
         </tr>
     </thead>
     <tbody>
-            {# rows/answer_row.php #}
-            {{ sRows }}
+        <?php
+            // rows/answer_row.php
+            echo $sRows;
+        ?>
     </tbody>
 </table>
 
