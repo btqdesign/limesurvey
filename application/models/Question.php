@@ -498,8 +498,8 @@ class Question extends LSActiveRecord
                 'answerscales' => 0,
                 'class' => 'array-10-pt'
             ),
-            "V" => array(
-                'description' => gT("Ranking", "html", $language),
+            "R" => array(
+                'description' => gT("NPS", "html", $language),
                 'group' => gT("Mask questions"),
                 'subquestions' => 0,
                 'hasdefaultvalues' => 0,
