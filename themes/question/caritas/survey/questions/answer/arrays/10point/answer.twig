@@ -18,19 +18,22 @@
     
     <tbody>
             {# rows/answer_row.php #}
-            <tr class="answer_cell_<?php echo $i;?><?php echo ($i==="") ? ' noanswer-item':''; ?> answer-item radio-item">
-   <td>
-   <input
+            <tr class="answer_cell_{{ i }}{% if i=="" %} noanswer-item{% endif %} answer-item radio-item" width='200px'>
+
+ <td>
+ 
+
+    <input
         type="radio"
-        name="<?php echo $myfname; ?>"
-        id="answer<?php echo $myfname; ?>-<?php echo $i;?>"
-        value="<?php echo $value; ?>"
-        <?php echo $CHECKED;?>
+        name="{{ myfname }}"
+        id="answer{{ myfname }}-{{ i }}"
+        value="{{ value }}"
+        {{ CHECKED }}
      />
-    <label for="answer<?php echo $myfname;?>-<?php echo $i; ?>"  class="ls-label-xs-visibility">
-        <?php echo $labelText;?>
+    <label for="answer{{ myfname }}-{{ i }}"  class="ls-label-xs-visibility">
+        {{ labelText }}
     </label>
-   </td>
+ </td>
 </tr>
     </tbody>
 </table>
