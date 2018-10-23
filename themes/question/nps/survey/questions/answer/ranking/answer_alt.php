@@ -23,6 +23,8 @@
 <!-- Ranking -->
 
 <!-- answer -->
+
+sin debug
 <div class="<?php echo $coreClass; ?>">
     <ul class="list-unstyled ls-js-hidden-sr answers-list select-list " role="group" aria-labelledby="ls-question-text-<?php echo $basename; ?>">
         <?php
