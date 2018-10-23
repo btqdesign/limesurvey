@@ -10,8 +10,9 @@
 #}
 
 <!-- answer_td_input -->
-<td class="answer_cell_{{ i }}{% if i=="" %} noanswer-item{% endif %} answer-item radio-item">
-
+<tr class="answer_cell_{{ i }}{% if i=="" %} noanswer-item{% endif %} answer-item radio-item">
+ <td>
+ 
 imagen
     <input
         type="radio"
@@ -23,5 +24,6 @@ imagen
     <label for="answer{{ myfname }}-{{ i }}"  class="ls-label-xs-visibility">
         {{ labelText }}
     </label>
-</td>
+ </td>
+</tr>
 <!-- end of answer_td_input -->
