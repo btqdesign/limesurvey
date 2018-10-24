@@ -26,9 +26,7 @@
         <css>
             <filename>css/persona.css</filename>
         </css>
-        <js>
-            <filename>scripts/persona.js</filename>
-        </js>
+       
         <preview>
             <filename>screenshots/personas.png</filename>
         </preview>
