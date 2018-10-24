@@ -3,22 +3,22 @@ table.content-persona{
     height: auto;
 }
 
-span.persona {
-    width: 50px !important;
-    height: 50px !important;
-    background: red;
 
+span.persona {
+    width: 30px !important;
+    height: 30px !important;
+    background: red;
     display: inline-block;
     margin-right: 16px;
-
+ 
 }
 
 
 .content-persona td > div {
     display: inline-block;
-    vertical-align: middle;
+     vertical-align: middle;
     margin-left: 15px;
-
+   
 }
 
 
@@ -27,74 +27,94 @@ span.persona {
     text-align: left;
 }
 .content-persona td > div :nth-child(1) {
-
+   
     width: 60px;
 }
 
 
 
 span.persona.persona4 {
-    background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas.png) 0 0;
-    background-size: cover;
+    background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas.png) 1% 0 !important;
+    background-size: cover !important;
 }
 
-span.persona.persona4:hover {
-    background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas_hover.png) 0px 0;
-    background-size: cover;
+span.persona.persona4:hover,.active-4 {
+    background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas_hover.png) 1% 0 !important;
+    background-size: cover !important;
 }
-
+ 
 span.persona.persona5 {
-    background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas.png) -50px 0;
-    background-size: cover;
+    background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas.png) 17% 0 !important;
+    background-size: cover !important;
 }
-span.persona.persona5:hover {
-    background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas_hover.png) -50px 0;
-    background-size: cover;
+span.persona.persona5:hover,.active-5 {
+    background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas_hover.png) 17% 0 !important;
+    background-size: cover !important;
 }
 
 span.persona.persona6 {
-    background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas.png) -100px 0;
-    background-size: cover;
+    background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas.png) 34% 0 !important;
+    background-size: cover !important;
 }
-span.persona.persona6:hover {
-    background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas_hover.png) -100px 0;
-    background-size: cover;
+span.persona.persona6:hover,.active-6 {
+    background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas_hover.png) 34% 0 !important;
+    background-size: cover !important;
 }
 
 
 span.persona.persona7 {
-    background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas.png) -150px 0;
-    background-size: cover;
+    background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas.png) 50% 0 !important;
+    background-size: cover !important;
 }
-span.persona.persona7:hover {
-    background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas_hover.png) -150px 0;
-    background-size: cover;
+span.persona.persona7:hover,.active-7 {
+    background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas_hover.png) 50% 0 !important;
+    background-size: cover !important;
 }
 
 span.persona.persona8 {
-    background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas.png) -200px 0;
-    background-size: cover;
+    background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas.png) 66% 0 !important;
+    background-size: cover !important;
 }
-span.persona.persona8:hover {
-    background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas_hover.png) -200px 0;
-    background-size: cover;
+span.persona.persona8:hover,.active-8 {
+    background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas_hover.png) 66% 0 !important;
+    background-size: cover !important;
 }
 
 span.persona.persona9 {
-    background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas.png) -250px 0;
-    background-size: cover;
+    background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas.png) 83% 0 !important;
+    background-size: cover !important;
 }
-span.persona.persona9:hover {
-    background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas_hover.png) -250px 0;
-    background-size: cover;
+span.persona.persona9:hover,.active-9 {
+    background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas_hover.png) 83% 0 !important;
+    background-size: cover !important;
 }
 
 span.persona.persona10 {
-    background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas.png) -300px 0;
-    background-size: cover;
+    background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas.png) 99% 0 !important;
+    background-size: cover !important;
 }
 
-span.persona.persona10:hover {
-    background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas_hover.png) -300px 0;
-    background-size: cover;
+span.persona.persona10:hover,.active-10 {
+    background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas_hover.png) 99% 0 !important;
+    background-size: cover !important;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
