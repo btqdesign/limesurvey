@@ -9,14 +9,47 @@
  */
  #}
 
-  <script>
+ <script>
  $(function(){
   $('.estrella').click(function(){
-  
+
       var number= $(this).data('number');
-     console.log(number);
-    
-  });
+      switch(number) {
+         case 1:
+         $('.estrella1').addClass('estrella-active');
+         break;
+         case 2:
+         $('.estrella1,.estrella2').addClass('estrella-active');
+         break;
+         case 3:
+         $('.estrella1,.estrella2').addClass('estrella-active');
+         break;
+         case 4:
+         $('.estrella1,.estrella2,.estrella3,.estrella4').addClass('estrella-active');
+         break;
+         case 5:
+         $('.estrella1,.estrella2,.estrella3,.estrella4,.estrella5').addClass('estrella-active');
+         break;
+         case 6:
+         $('.estrella1,.estrella2,.estrella3,.estrella4,.estrella5,.estrella6').addClass('estrella-active');
+         break;
+         case 7:
+         $('.estrella1,.estrella2,.estrella3,.estrella4,.estrella5,.estrella6,.estrella7').addClass('estrella-active');
+         break;
+         case 8:
+         $('.estrella1,.estrella2,.estrella3,.estrella4,.estrella5,.estrella6,.estrella7,.estrella8').addClass('estrella-active');
+         break;
+         case 9:
+         $('.estrella1,.estrella2,.estrella3,.estrella4,.estrella5,.estrella6,.estrella7,.estrella8,.estrella9').addClass('estrella-active');
+         break;
+         case 10:
+         $('.estrella1,.estrella2,.estrella3,.estrella4,.estrella5,.estrella6,.estrella7,.estrella8,.estrella9,.estrella10').addClass('estrella-active').addClass('estrella-active');
+         break;
+
+
+     }
+
+ });
 });
 
  </script>
@@ -24,21 +57,21 @@
  <!-- answer_td_input -->
  <td class="answer_cell_{{ i }}{% if i=="" %} noanswer-item{% endif %} answer-item radio-item">
 
-     
-
-      <img src="/themes/question/estrellas/survey/questions/answer/arrays/10point/assets/estrella.png" class="estrella estrella{{ i }}"  data-number="{{i}}" alt="">
 
 
+  <img src="/themes/question/estrellas/survey/questions/answer/arrays/10point/assets/estrella.png" class="estrella estrella{{ i }}"  data-number="{{i}}" alt="">
 
 
 
-     <input 
-     type="radio"
-     name="{{ myfname }}"
-     id="answer{{ myfname }}-{{ i }}"
-     value="{{ value }}"
-     {{ CHECKED }}
-     />
+
+
+  <input 
+  type="radio"
+  name="{{ myfname }}"
+  id="answer{{ myfname }}-{{ i }}"
+  value="{{ value }}"
+  {{ CHECKED }}
+  />
     {#  <label for="answer{{ myfname }}-{{ i }}"  class="ls-label-xs-visibility">
         {{ labelText }}
     </label> #}
