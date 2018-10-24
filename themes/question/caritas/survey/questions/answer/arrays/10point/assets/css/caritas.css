@@ -11,3 +11,10 @@ span.carita {
     margin-right: 15px;
  
 }
+
+.answer-item.radio-item > div {
+    display: inline-block;
+    /* line-height: 29px; */
+    vertical-align: middle;
+    margin-left: 15px;
+}
