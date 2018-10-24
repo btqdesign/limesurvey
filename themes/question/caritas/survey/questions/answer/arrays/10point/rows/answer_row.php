@@ -22,9 +22,12 @@
         ));
         ?>
     </th>
-    <?php
+    <tr>
+       <?php
         // defined in rows/cells/*
-        echo $answer_tds;
-    ?>
+       echo $answer_tds;
+       ?>
+   </tr>
+   
 </tr>
 <!-- end of answer_row -->

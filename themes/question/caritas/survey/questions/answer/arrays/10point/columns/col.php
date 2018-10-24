@@ -8,5 +8,5 @@
 ?>
 
 <!-- col -->
-<col class="<?php echo $odd_even; ?>" style='width: <?php echo $cellwidth; ?>%;' />
+<!-- <col class="<?php echo $odd_even; ?>" style='width: <?php echo $cellwidth; ?>%;' /> -->
 <!-- end of col -->
