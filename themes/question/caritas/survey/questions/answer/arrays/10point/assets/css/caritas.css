@@ -38,7 +38,7 @@ span.carita.carita4 {
     background-size: cover !important;
 }
 
-span.carita.carita4:hover,.active-4 {
+span.carita.carita4:hover,.carita-active-4 {
     background: url(/themes/question/caritas/survey/questions/answer/arrays/10point/assets/caritas_hover.png) 1% 0 !important;
     background-size: cover !important;
 }
@@ -47,7 +47,7 @@ span.carita.carita5 {
     background: url(/themes/question/caritas/survey/questions/answer/arrays/10point/assets/caritas.png) 17% 0 ;
     background-size: cover !important;
 }
-span.carita.carita5:hover,.active-5 {
+span.carita.carita5:hover,.carita-active-5 {
     background: url(/themes/question/caritas/survey/questions/answer/arrays/10point/assets/caritas_hover.png) 17% 0 !important;
     background-size: cover !important;
 }
@@ -56,7 +56,7 @@ span.carita.carita6 {
     background: url(/themes/question/caritas/survey/questions/answer/arrays/10point/assets/caritas.png) 34% 0 ;
     background-size: cover !important;
 }
-span.carita.carita6:hover,.active-6 {
+span.carita.carita6:hover,.carita-active-6 {
     background: url(/themes/question/caritas/survey/questions/answer/arrays/10point/assets/caritas_hover.png) 34% 0 !important;
     background-size: cover !important;
 }
@@ -66,7 +66,7 @@ span.carita.carita7 {
     background: url(/themes/question/caritas/survey/questions/answer/arrays/10point/assets/caritas.png) 50% 0 ;
     background-size: cover !important;
 }
-span.carita.carita7:hover,.active-7 {
+span.carita.carita7:hover,.carita-active-7 {
     background: url(/themes/question/caritas/survey/questions/answer/arrays/10point/assets/caritas_hover.png) 50% 0 !important;
     background-size: cover !important;
 }
@@ -75,7 +75,7 @@ span.carita.carita8 {
     background: url(/themes/question/caritas/survey/questions/answer/arrays/10point/assets/caritas.png) 66% 0 ;
     background-size: cover !important;
 }
-span.carita.carita8:hover,.active-8 {
+span.carita.carita8:hover,.carita-active-8 {
     background: url(/themes/question/caritas/survey/questions/answer/arrays/10point/assets/caritas_hover.png) 66% 0 !important;
     background-size: cover !important;
 }
@@ -84,7 +84,7 @@ span.carita.carita9 {
     background: url(/themes/question/caritas/survey/questions/answer/arrays/10point/assets/caritas.png) 83% 0 ;
     background-size: cover !important;
 }
-span.carita.carita9:hover,.active-9 {
+span.carita.carita9:hover,.carita-active-9 {
     background: url(/themes/question/caritas/survey/questions/answer/arrays/10point/assets/caritas_hover.png) 83% 0 !important;
     background-size: cover !important;
 }
@@ -94,7 +94,7 @@ span.carita.carita10 {
     background-size: cover !important;
 }
 
-span.carita.carita10:hover,.active-10 {
+span.carita.carita10:hover,.carita-active-10 {
     background: url(/themes/question/caritas/survey/questions/answer/arrays/10point/assets/caritas_hover.png) 99% 0 !important;
     background-size: cover !important;
 }
