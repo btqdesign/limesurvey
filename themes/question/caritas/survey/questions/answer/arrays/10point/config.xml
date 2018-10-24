@@ -26,6 +26,9 @@
         <css>
             <filename>css/caritas.css</filename>
         </css>
+        <js>
+            <filename>js/caritas.js</filename>
+        </js>
        
         <preview>
             <filename>screenshots/caritas.png</filename>
