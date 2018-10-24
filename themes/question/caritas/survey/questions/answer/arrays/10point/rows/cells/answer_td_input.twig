@@ -10,6 +10,7 @@
  #}
 
  <!-- answer_td_input -->
+ {% if i != 1 || i !=2 || i !=3  %}
  <tr>
     <td class="answer_cell_{{ i }}{% if i=="" %} noanswer-item{% endif %} answer-item radio-item">
     
@@ -48,4 +49,5 @@
         </label>
     </td>
 </tr>
+{% endif %}
 <!-- end of answer_td_input -->
