@@ -11,10 +11,10 @@
 
  <script>
  $(function(){
-  $('input[type="radio"]').click(function(){
+  $('.content-caritas input[type="radio"]').click(function(){
     if ($(this).is(':checked'))
     {
-      alert($(this).val());
+      $(this).addClass('carita-active-'+$(this).val());
     }
   });
 });
