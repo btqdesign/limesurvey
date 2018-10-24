@@ -62,11 +62,48 @@
         id="answer{{ myfname }}-{{ i }}"
         value="{{ value }}"
         {{ CHECKED }}
-        />
+        >
         <label for="answer{{ myfname }}-{{ i }}"  class="ls-label-xs-visibility label-carita">
-            {{ labelText }}
-        </label>
-    </div>
+
+         {% if i==4 %}
+
+            Extremadamente insatisfecho
+
+        {% endif  %}
+        {% if i==5 %}
+
+            Insatisfecho
+
+        {% endif  %}
+        {% if i==6 %}
+
+            Moderadamente insatisfecho
+
+        {% endif  %}
+        {% if i==7 %}
+
+            Ni satisfecho ni insatisfecho
+
+        {% endif  %}
+        {% if i==8 %}
+
+            Moderasamente satisfecho
+
+        {% endif  %}
+        {% if i==9 %}
+
+            Satisfecho
+
+        {% endif  %}
+        {% if i==10 %}
+
+
+            Extremadamente Satisfecho
+
+        {% endif  %}
+
+    </label>
+</div>
 </td>
 </tr>
 {% endif %}
