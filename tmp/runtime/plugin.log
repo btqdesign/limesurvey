@@ -342,3 +342,75 @@
 2018/10/22 10:42:31 [trace] [plugin.Webserver] Found no config file
 2018/10/22 10:42:31 [trace] [plugin.STATA Export] Found no config file
 2018/10/22 10:42:31 [trace] [plugin.Export results to R] Found no config file
+2018/10/22 17:12:08 [trace] [plugin.LimeSurvey internal database] Found no config file
+2018/10/22 17:12:08 [trace] [plugin.LDAP] Found no config file
+2018/10/22 17:12:08 [trace] [plugin.btq_nps] Found no config file
+2018/10/22 17:12:08 [trace] [plugin.auditlog] Found no config file
+2018/10/22 17:12:08 [trace] [plugin.extendStartpage] Found no config file
+2018/10/22 17:12:08 [trace] [plugin.oldUrlCompat] Found no config file
+2018/10/22 17:12:08 [trace] [plugin.Webserver] Found no config file
+2018/10/22 17:12:08 [trace] [plugin.STATA Export] Found no config file
+2018/10/22 17:12:08 [trace] [plugin.Export results to R] Found no config file
+2018/10/23 09:43:48 [trace] [plugin.LimeSurvey internal database] Found no config file
+2018/10/23 09:43:48 [trace] [plugin.LDAP] Found no config file
+2018/10/23 09:43:48 [trace] [plugin.btq_nps] Found no config file
+2018/10/23 09:43:48 [trace] [plugin.auditlog] Found no config file
+2018/10/23 09:43:48 [trace] [plugin.extendStartpage] Found no config file
+2018/10/23 09:43:48 [trace] [plugin.oldUrlCompat] Found no config file
+2018/10/23 09:43:48 [trace] [plugin.Webserver] Found no config file
+2018/10/23 09:43:48 [trace] [plugin.STATA Export] Found no config file
+2018/10/23 09:43:48 [trace] [plugin.Export results to R] Found no config file
+2018/10/23 15:46:27 [trace] [plugin.LimeSurvey internal database] Found no config file
+2018/10/23 15:46:27 [trace] [plugin.LDAP] Found no config file
+2018/10/23 15:46:27 [trace] [plugin.btq_nps] Found no config file
+2018/10/23 15:46:27 [trace] [plugin.auditlog] Found no config file
+2018/10/23 15:46:27 [trace] [plugin.extendStartpage] Found no config file
+2018/10/23 15:46:27 [trace] [plugin.oldUrlCompat] Found no config file
+2018/10/23 15:46:27 [trace] [plugin.Webserver] Found no config file
+2018/10/23 15:46:27 [trace] [plugin.STATA Export] Found no config file
+2018/10/23 15:46:27 [trace] [plugin.Export results to R] Found no config file
+2018/10/23 17:12:35 [trace] [plugin.LimeSurvey internal database] Found no config file
+2018/10/23 17:12:35 [trace] [plugin.LDAP] Found no config file
+2018/10/23 17:12:35 [trace] [plugin.btq_nps] Found no config file
+2018/10/23 17:12:35 [trace] [plugin.auditlog] Found no config file
+2018/10/23 17:12:35 [trace] [plugin.extendStartpage] Found no config file
+2018/10/23 17:12:35 [trace] [plugin.oldUrlCompat] Found no config file
+2018/10/23 17:12:35 [trace] [plugin.Webserver] Found no config file
+2018/10/23 17:12:35 [trace] [plugin.STATA Export] Found no config file
+2018/10/23 17:12:35 [trace] [plugin.Export results to R] Found no config file
+2018/10/24 09:37:58 [trace] [plugin.LimeSurvey internal database] Found no config file
+2018/10/24 09:37:58 [trace] [plugin.LDAP] Found no config file
+2018/10/24 09:37:58 [trace] [plugin.btq_nps] Found no config file
+2018/10/24 09:37:58 [trace] [plugin.auditlog] Found no config file
+2018/10/24 09:37:58 [trace] [plugin.extendStartpage] Found no config file
+2018/10/24 09:37:58 [trace] [plugin.oldUrlCompat] Found no config file
+2018/10/24 09:37:58 [trace] [plugin.Webserver] Found no config file
+2018/10/24 09:37:58 [trace] [plugin.STATA Export] Found no config file
+2018/10/24 09:37:58 [trace] [plugin.Export results to R] Found no config file
+2018/10/24 10:40:19 [trace] [plugin.LimeSurvey internal database] Found no config file
+2018/10/24 10:40:19 [trace] [plugin.LDAP] Found no config file
+2018/10/24 10:40:19 [trace] [plugin.btq_nps] Found no config file
+2018/10/24 10:40:19 [trace] [plugin.auditlog] Found no config file
+2018/10/24 10:40:19 [trace] [plugin.extendStartpage] Found no config file
+2018/10/24 10:40:19 [trace] [plugin.oldUrlCompat] Found no config file
+2018/10/24 10:40:19 [trace] [plugin.Webserver] Found no config file
+2018/10/24 10:40:19 [trace] [plugin.STATA Export] Found no config file
+2018/10/24 10:40:19 [trace] [plugin.Export results to R] Found no config file
+2018/10/24 12:17:32 [trace] [plugin.LimeSurvey internal database] Found no config file
+2018/10/24 12:17:32 [trace] [plugin.LDAP] Found no config file
+2018/10/24 12:17:32 [trace] [plugin.btq_nps] Found no config file
+2018/10/24 12:17:32 [trace] [plugin.auditlog] Found no config file
+2018/10/24 12:17:32 [trace] [plugin.extendStartpage] Found no config file
+2018/10/24 12:17:32 [trace] [plugin.oldUrlCompat] Found no config file
+2018/10/24 12:17:32 [trace] [plugin.Webserver] Found no config file
+2018/10/24 12:17:32 [trace] [plugin.STATA Export] Found no config file
+2018/10/24 12:17:32 [trace] [plugin.Export results to R] Found no config file
+2018/10/24 13:27:24 [trace] [plugin.LimeSurvey internal database] Found no config file
+2018/10/24 13:27:24 [trace] [plugin.LDAP] Found no config file
+2018/10/24 13:27:24 [trace] [plugin.btq_nps] Found no config file
+2018/10/24 13:27:24 [trace] [plugin.auditlog] Found no config file
+2018/10/24 13:27:24 [trace] [plugin.extendStartpage] Found no config file
+2018/10/24 13:27:24 [trace] [plugin.oldUrlCompat] Found no config file
+2018/10/24 13:27:24 [trace] [plugin.Webserver] Found no config file
+2018/10/24 13:27:24 [trace] [plugin.STATA Export] Found no config file
+2018/10/24 13:27:24 [trace] [plugin.Export results to R] Found no config file
