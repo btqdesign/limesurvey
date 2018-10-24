@@ -11,12 +11,11 @@
 
   <script>
  $(function(){
-  $('.content-persona input[type="radio"]').click(function(){
-    if ($(this).is(':checked'))
-    {
-      var number= $(this).val();
+  $('.estrella"]').click(function(){
+  
+      var number= $(this).data('number');
      console.log(number);
-    }
+    
   });
 });
 
@@ -27,7 +26,7 @@
 
      
 
-      <img src="/themes/question/estrellas/survey/questions/answer/arrays/10point/assets/estrella.png" class="estrella estrella{{ i }}" alt="">
+      <img src="/themes/question/estrellas/survey/questions/answer/arrays/10point/assets/estrella.png" class="estrella estrella{{ i }}"  data-number="{{i}}" alt="">
 
 
 
