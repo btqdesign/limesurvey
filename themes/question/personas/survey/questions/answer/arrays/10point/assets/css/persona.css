@@ -35,94 +35,66 @@ span.persona {
 
 span.persona.persona4 {
     background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas.png) 0 0;
-    width: 100px;
-    height: 100px;
     background-size: cover;
 }
 
 span.persona.persona4:hover {
-    background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas_hover.png) 0 0;
-    width: 100px;
-    height: 100px;
+    background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas_hover.png) 0px 0;
     background-size: cover;
 }
 
 span.persona.persona5 {
-    background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas.png) 355px 0;
-    width: 100px;
-    height: 100px;
+    background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas.png) -50px 0;
     background-size: cover;
 }
 span.persona.persona5:hover {
-    background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas_hover.png) 355px 0;
-    width: 100px;
-    height: 100px;
+    background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas_hover.png) -50px 0;
     background-size: cover;
 }
 
 span.persona.persona6 {
-    background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas.png) 295px 0;
-    width: 100px;
-    height: 100px;
+    background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas.png) -100px 0;
     background-size: cover;
 }
 span.persona.persona6:hover {
-    background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas_hover.png) 295px 0;
-    width: 100px;
-    height: 100px;
+    background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas_hover.png) -100px 0;
     background-size: cover;
 }
 
 
 span.persona.persona7 {
-    background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas.png) 234px 0;
-    width: 100px;
-    height: 100px;
+    background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas.png) -150px 0;
     background-size: cover;
 }
 span.persona.persona7:hover {
-    background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas_hover.png) 234px 0;
-    width: 100px;
-    height: 100px;
+    background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas_hover.png) -150px 0;
     background-size: cover;
 }
 
 span.persona.persona8 {
-    background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas.png) 174px 0;
-    width: 100px;
-    height: 100px;
+    background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas.png) -200px 0;
     background-size: cover;
 }
 span.persona.persona8:hover {
-    background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas_hover.png) 174px 0;
-    width: 100px;
-    height: 100px;
+    background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas_hover.png) -200px 0;
     background-size: cover;
 }
 
 span.persona.persona9 {
-    background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas.png) 113px 0;
-    width: 100px;
-    height: 100px;
+    background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas.png) -250px 0;
     background-size: cover;
 }
 span.persona.persona9:hover {
-    background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas_hover.png) 113px 0;
-    width: 100px;
-    height: 100px;
+    background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas_hover.png) -250px 0;
     background-size: cover;
 }
 
 span.persona.persona10 {
-    background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas.png) 58px 0;
-    width: 100px;
-    height: 100px;
+    background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas.png) -300px 0;
     background-size: cover;
 }
 
 span.persona.persona10:hover {
-    background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas_hover.png) 58px 0;
-    width: 100px;
-    height: 100px;
+    background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas_hover.png) -300px 0;
     background-size: cover;
 }

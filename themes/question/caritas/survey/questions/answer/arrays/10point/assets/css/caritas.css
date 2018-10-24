@@ -4,10 +4,9 @@ table.content-caritas{
 }
 
 span.carita {
-    width: 50px;
-    height: 50px;
+    width: 50px !important;
+    height: 50px !important;
     background: red;
-  
     display: inline-block;
     margin-right: 16px;
  
@@ -35,8 +34,6 @@ span.carita {
 
 span.carita.carita4 {
     background: url(/themes/question/caritas/survey/questions/answer/arrays/10point/assets/caritas.png) 0 0;
-    width: 50px;
-    height: 50px;
     background-size: cover;
 }
 
@@ -48,26 +45,22 @@ span.carita.carita4:hover {
 }
 
 span.carita.carita5 {
-    background: url(/themes/question/caritas/survey/questions/answer/arrays/10point/assets/caritas.png) 355px 0;
-    width: 50px;
-    height: 50px;
+    background: url(/themes/question/caritas/survey/questions/answer/arrays/10point/assets/caritas.png) -50px 0;
     background-size: cover;
 }
 span.carita.carita5:hover {
-    background: url(/themes/question/caritas/survey/questions/answer/arrays/10point/assets/caritas_hover.png) 355px 0;
+    background: url(/themes/question/caritas/survey/questions/answer/arrays/10point/assets/caritas_hover.png) -50px 0;
     
     height: 50px;
     background-size: cover;
 }
 
 span.carita.carita6 {
-    background: url(/themes/question/caritas/survey/questions/answer/arrays/10point/assets/caritas.png) 295px 0;
-    width: 50px;
-    height: 50px;
+    background: url(/themes/question/caritas/survey/questions/answer/arrays/10point/assets/caritas.png) -100px 0;
     background-size: cover;
 }
 span.carita.carita6:hover {
-    background: url(/themes/question/caritas/survey/questions/answer/arrays/10point/assets/caritas_hover.png) 295px 0;
+    background: url(/themes/question/caritas/survey/questions/answer/arrays/10point/assets/caritas_hover.png) -100px 0;
    
     height: 50px;
     background-size: cover;
@@ -75,53 +68,45 @@ span.carita.carita6:hover {
 
 
 span.carita.carita7 {
-    background: url(/themes/question/caritas/survey/questions/answer/arrays/10point/assets/caritas.png) 234px 0;
-    width: 50px;
-    height: 50px;
+    background: url(/themes/question/caritas/survey/questions/answer/arrays/10point/assets/caritas.png) -150px 0;
     background-size: cover;
 }
 span.carita.carita7:hover {
-    background: url(/themes/question/caritas/survey/questions/answer/arrays/10point/assets/caritas_hover.png) 234px 0;
+    background: url(/themes/question/caritas/survey/questions/answer/arrays/10point/assets/caritas_hover.png) -150px 0;
    
     height: 50px;
     background-size: cover;
 }
 
 span.carita.carita8 {
-    background: url(/themes/question/caritas/survey/questions/answer/arrays/10point/assets/caritas.png) 174px 0;
-    width: 50px;
-    height: 50px;
+    background: url(/themes/question/caritas/survey/questions/answer/arrays/10point/assets/caritas.png) -200px 0;
     background-size: cover;
 }
 span.carita.carita8:hover {
-    background: url(/themes/question/caritas/survey/questions/answer/arrays/10point/assets/caritas_hover.png) 174px 0;
+    background: url(/themes/question/caritas/survey/questions/answer/arrays/10point/assets/caritas_hover.png) -200px 0;
     
     height: 50px;
     background-size: cover;
 }
 
 span.carita.carita9 {
-    background: url(/themes/question/caritas/survey/questions/answer/arrays/10point/assets/caritas.png) 113px 0;
-    width: 50px;
-    height: 50px;
+    background: url(/themes/question/caritas/survey/questions/answer/arrays/10point/assets/caritas.png) -250px 0;
     background-size: cover;
 }
 span.carita.carita9:hover {
-    background: url(/themes/question/caritas/survey/questions/answer/arrays/10point/assets/caritas_hover.png) 113px 0;
+    background: url(/themes/question/caritas/survey/questions/answer/arrays/10point/assets/caritas_hover.png) -250px 0;
    
     height: 50px;
     background-size: cover;
 }
 
 span.carita.carita10 {
-    background: url(/themes/question/caritas/survey/questions/answer/arrays/10point/assets/caritas.png) 58px 0;
-    width: 50px;
-    height: 50px;
+    background: url(/themes/question/caritas/survey/questions/answer/arrays/10point/assets/caritas.png) -300px 0;
     background-size: cover;
 }
 
 span.carita.carita10:hover {
-    background: url(/themes/question/caritas/survey/questions/answer/arrays/10point/assets/caritas_hover.png) 58px 0;
+    background: url(/themes/question/caritas/survey/questions/answer/arrays/10point/assets/caritas_hover.png) -300px 0;
    
     height: 50px;
     background-size: cover;
