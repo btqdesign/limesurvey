@@ -7,19 +7,27 @@
  * @var $checkconditionFunction
  * @var $value
  */
-#}
+ #}
 
-<!-- answer_td_input -->
-<td class="answer_cell_{{ i }}{% if i=="" %} noanswer-item{% endif %} answer-item radio-item">
-    estrellas
-    <input
-        type="radio"
-        name="{{ myfname }}"
-        id="answer{{ myfname }}-{{ i }}"
-        value="{{ value }}"
-        {{ CHECKED }}
+ <!-- answer_td_input -->
+ <td class="answer_cell_{{ i }}{% if i=="" %} noanswer-item{% endif %} answer-item radio-item">
+
+     
+
+      <img src="assets/estrella.png" alt="">
+
+
+
+
+
+     <input 
+     type="radio"
+     name="{{ myfname }}"
+     id="answer{{ myfname }}-{{ i }}"
+     value="{{ value }}"
+     {{ CHECKED }}
      />
-    <label for="answer{{ myfname }}-{{ i }}"  class="ls-label-xs-visibility">
+     <label for="answer{{ myfname }}-{{ i }}"  class="ls-label-xs-visibility">
         {{ labelText }}
     </label>
 </td>
