@@ -8,8 +8,8 @@
     <metadata>
         <name>caritas</name>
         <creationDate>15/11/2017</creationDate>
-        <author>Markus Flür</author>
-        <authorEmail>mfluer@limesurvey.org</authorEmail>
+        <author>Jorge Santana Loza</author>
+        <authorEmail>jorge@btqdesign.com</authorEmail>
         <authorUrl>http://www.limesurvey.org</authorUrl>
         <copyright>Copyright (C) 2005 - 2017 LimeSurvey Gmbh, Inc. All rights reserved.</copyright>
         <license>GNU General Public License version 2 or later</license>
@@ -24,10 +24,10 @@
     -->
     <files>
         <css>
-            <filename>css/ranking.css</filename>
+            <filename>css/caritas.css</filename>
         </css>
         <js>
-            <filename>scripts/advanced_ranking.js</filename>
+            <filename>scripts/caritas.js</filename>
         </js>
         <preview>
             <filename>screenshots/caritas.png</filename>
