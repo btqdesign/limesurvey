@@ -1,4 +1,4 @@
-function cambiarCarita(){
+function cambiarcarita(){
 
 console.log('cambio');
 
