@@ -1,0 +1,63 @@
+table.ls-answers{
+	width: 400px !important;
+	height: auto;
+}
+
+span.persona {
+    width: 50px;
+    height: 50px;
+    background: red;
+    border: 1px solid red;
+    display: inline-block;
+    margin-right: 16px;
+ 
+}
+
+
+span.persona.persona4 {
+    background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas.png) 0 0;
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+}
+
+span.persona.persona5 {
+    background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas.png) 355px 0;
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+}
+
+span.persona.persona6 {
+    background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas.png) 295px 0;
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+}
+
+span.persona.persona7 {
+    background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas.png) 234px 0;
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+}
+
+span.persona.persona8 {
+    background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas.png) 174px 0;
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+}
+span.persona.persona9 {
+    background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas.png) 113px 0;
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+}
+
+span.persona.persona10 {
+    background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas.png) 52px 0;
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+}
