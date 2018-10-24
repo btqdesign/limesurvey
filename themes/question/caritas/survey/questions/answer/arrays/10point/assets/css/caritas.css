@@ -4,8 +4,8 @@ table.content-caritas{
 }
 
 span.carita {
-    width: 50px !important;
-    height: 50px !important;
+    width: 40px !important;
+    height: 40px !important;
     background: red;
     display: inline-block;
     margin-right: 16px;
