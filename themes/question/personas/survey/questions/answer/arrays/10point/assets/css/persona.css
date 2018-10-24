@@ -13,6 +13,21 @@ span.persona {
  
 }
 
+.content-caritas td > div :nth-child(2) {
+    width: 201px;
+    text-align: left;
+}
+.content-caritas td > div :nth-child(1) {
+    background: red;
+    width: 60px;
+}
+.content-caritas td > div {
+    display: inline-block;
+    /* background: red; */
+    /* width: 90px; */
+}
+
+
 .content-persona > div {
     display: inline-block;
     vertical-align: middle;

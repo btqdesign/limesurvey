@@ -14,11 +14,24 @@ span.carita {
 }
 
 
-.content-caritas > div {
+.content-caritas td > div {
     display: inline-block;
-    vertical-align: middle;
+     vertical-align: middle;
     margin-left: 15px;
+   
 }
+
+
+.content-caritas td > div :nth-child(2) {
+    width: 201px;
+    text-align: left;
+}
+.content-caritas td > div :nth-child(1) {
+    background: red;
+    width: 60px;
+}
+
+
 
 span.carita.carita4 {
     background: url(/themes/question/caritas/survey/questions/answer/arrays/10point/assets/caritas.png) 0 0;
