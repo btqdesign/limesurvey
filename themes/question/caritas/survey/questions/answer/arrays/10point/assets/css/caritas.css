@@ -42,7 +42,7 @@ span.carita.carita4 {
 
 span.carita.carita4:hover {
     background: url(/themes/question/caritas/survey/questions/answer/arrays/10point/assets/caritas_hover.png) 0 0;
-    width: 50px;
+   
     height: 50px;
     background-size: cover;
 }
@@ -55,7 +55,7 @@ span.carita.carita5 {
 }
 span.carita.carita5:hover {
     background: url(/themes/question/caritas/survey/questions/answer/arrays/10point/assets/caritas_hover.png) 355px 0;
-    width: 50px;
+    
     height: 50px;
     background-size: cover;
 }
@@ -68,7 +68,7 @@ span.carita.carita6 {
 }
 span.carita.carita6:hover {
     background: url(/themes/question/caritas/survey/questions/answer/arrays/10point/assets/caritas_hover.png) 295px 0;
-    width: 50px;
+   
     height: 50px;
     background-size: cover;
 }
@@ -82,7 +82,7 @@ span.carita.carita7 {
 }
 span.carita.carita7:hover {
     background: url(/themes/question/caritas/survey/questions/answer/arrays/10point/assets/caritas_hover.png) 234px 0;
-    width: 50px;
+   
     height: 50px;
     background-size: cover;
 }
@@ -95,7 +95,7 @@ span.carita.carita8 {
 }
 span.carita.carita8:hover {
     background: url(/themes/question/caritas/survey/questions/answer/arrays/10point/assets/caritas_hover.png) 174px 0;
-    width: 50px;
+    
     height: 50px;
     background-size: cover;
 }
@@ -108,7 +108,7 @@ span.carita.carita9 {
 }
 span.carita.carita9:hover {
     background: url(/themes/question/caritas/survey/questions/answer/arrays/10point/assets/caritas_hover.png) 113px 0;
-    width: 50px;
+   
     height: 50px;
     background-size: cover;
 }
@@ -122,7 +122,7 @@ span.carita.carita10 {
 
 span.carita.carita10:hover {
     background: url(/themes/question/caritas/survey/questions/answer/arrays/10point/assets/caritas_hover.png) 58px 0;
-    width: 50px;
+   
     height: 50px;
     background-size: cover;
 }

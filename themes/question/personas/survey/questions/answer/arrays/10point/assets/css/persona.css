@@ -1,43 +1,48 @@
 table.ls-answers{
-	width: 400px !important;
-	height: auto;
+    width: 400px !important;
+    height: auto;
 }
 
 span.persona {
     width: 50px;
     height: 50px;
     background: red;
-    border: 1px solid red;
+  
     display: inline-block;
     margin-right: 16px;
  
 }
 
-.content-caritas td > div :nth-child(2) {
+
+.content-personas td > div {
+    display: inline-block;
+     vertical-align: middle;
+    margin-left: 15px;
+   
+}
+
+
+.content-personas td > div :nth-child(2) {
     width: 201px;
     text-align: left;
 }
-.content-caritas td > div :nth-child(1) {
-    background: red;
+.content-personas td > div :nth-child(1) {
+   
     width: 60px;
 }
-.content-caritas td > div {
-    display: inline-block;
-    /* background: red; */
-    /* width: 90px; */
-}
 
-
-.content-persona > div {
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 15px;
-}
 
 
 span.persona.persona4 {
     background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas.png) 0 0;
     width: 50px;
+    height: 50px;
+    background-size: cover;
+}
+
+span.persona.persona4:hover {
+    background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas_hover.png) 0 0;
+   
     height: 50px;
     background-size: cover;
 }
@@ -48,6 +53,12 @@ span.persona.persona5 {
     height: 50px;
     background-size: cover;
 }
+span.persona.persona5:hover {
+    background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas_hover.png) 355px 0;
+    
+    height: 50px;
+    background-size: cover;
+}
 
 span.persona.persona6 {
     background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas.png) 295px 0;
@@ -55,10 +66,23 @@ span.persona.persona6 {
     height: 50px;
     background-size: cover;
 }
+span.persona.persona6:hover {
+    background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas_hover.png) 295px 0;
+   
+    height: 50px;
+    background-size: cover;
+}
+
 
 span.persona.persona7 {
     background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas.png) 234px 0;
     width: 50px;
+    height: 50px;
+    background-size: cover;
+}
+span.persona.persona7:hover {
+    background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas_hover.png) 234px 0;
+   
     height: 50px;
     background-size: cover;
 }
@@ -69,16 +93,36 @@ span.persona.persona8 {
     height: 50px;
     background-size: cover;
 }
+span.persona.persona8:hover {
+    background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas_hover.png) 174px 0;
+    
+    height: 50px;
+    background-size: cover;
+}
+
 span.persona.persona9 {
     background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas.png) 113px 0;
     width: 50px;
     height: 50px;
     background-size: cover;
 }
+span.persona.persona9:hover {
+    background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas_hover.png) 113px 0;
+   
+    height: 50px;
+    background-size: cover;
+}
 
 span.persona.persona10 {
-    background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas.png) 52px 0;
+    background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas.png) 58px 0;
     width: 50px;
+    height: 50px;
+    background-size: cover;
+}
+
+span.persona.persona10:hover {
+    background: url(/themes/question/personas/survey/questions/answer/arrays/10point/assets/personas_hover.png) 58px 0;
+   
     height: 50px;
     background-size: cover;
 }
