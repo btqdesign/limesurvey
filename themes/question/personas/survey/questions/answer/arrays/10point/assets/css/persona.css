@@ -22,11 +22,11 @@ span.persona {
 }
 
 
-.content-personas td > div :nth-child(2) {
+.content-persona td > div :nth-child(2) {
     width: 201px;
     text-align: left;
 }
-.content-personas td > div :nth-child(1) {
+.content-persona td > div :nth-child(1) {
 
     width: 60px;
 }
