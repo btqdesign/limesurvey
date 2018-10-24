@@ -24,10 +24,10 @@
     -->
     <files>
         <css>
-            <filename>css/ranking.css</filename>
+            <filename>css/persona.css</filename>
         </css>
         <js>
-            <filename>scripts/advanced_ranking.js</filename>
+            <filename>scripts/persona.js</filename>
         </js>
         <preview>
             <filename>screenshots/personas.png</filename>
