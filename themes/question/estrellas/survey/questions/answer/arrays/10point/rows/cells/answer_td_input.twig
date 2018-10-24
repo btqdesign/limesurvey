@@ -63,6 +63,7 @@
 });
 
  </script>
+{% if i > 1 %}
 
  <!-- answer_td_input -->
  <td class="answer_cell_{{ i }}{% if i=="" %} noanswer-item{% endif %} answer-item radio-item">
@@ -86,4 +87,5 @@
         {{ labelText }}
     </label> #}
 </td>
+{% endif %}
 <!-- end of answer_td_input -->
