@@ -26,9 +26,7 @@
         <css>
             <filename>css/estrella.css</filename>
         </css>
-        <js>
-            <filename>scripts/estrella.js</filename>
-        </js>
+       
         <preview>
             <filename>screenshots/estrellas.png</filename>
         </preview>
