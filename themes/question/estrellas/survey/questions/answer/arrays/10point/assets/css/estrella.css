@@ -10,7 +10,7 @@ img.estrella {
 }
 
 
-img.estrella:hover {
+img.estrella:hover,.estrella-active {
     background: url(/themes/question/estrellas/survey/questions/answer/arrays/10point/assets/estrella_hover.png);
     background-size:cover;
 }
