@@ -14,7 +14,8 @@
   $('.content-caritas input[type="radio"]').click(function(){
     if ($(this).is(':checked'))
     {
-      $(this).addClass('carita-active-'+$(this).val());
+      var number= $(this).val();
+      $('.carita'+number).addClass('carita-active-'+number);
     }
   });
 });
