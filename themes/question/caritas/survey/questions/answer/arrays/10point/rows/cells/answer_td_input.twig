@@ -15,6 +15,7 @@
     if ($(this).is(':checked'))
     {
       var number= $(this).val();
+      $('.carita4,.carita5,.carita6,.carita7,.carita8,.carita9,.carita10').removeClass('carita-active-4 carita-active-5 carita-active-6 carita-active-7 carita-active-8 carita-active-9 carita-active-10')
       $('.carita'+number).addClass('carita-active-'+number);
     }
   });
