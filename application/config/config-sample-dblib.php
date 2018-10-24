@@ -48,10 +48,7 @@ return array(
             'rules' => require('routes.php'),
             'showScriptName' => true,
         ),
-        'assetManager' => [
-            'class' => 'yii\web\AssetManager',
-            'forceCopy' => true,          
-        ]
+        
 
     ),
     // Use the following config variable to set modified optional settings copied from config-defaults.php
