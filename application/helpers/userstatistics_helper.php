@@ -247,7 +247,7 @@ function createChart($iQuestionID, $iSurveyID, $type = null, $lbl, $gdata, $graw
             //create new 3D pie chart
             $DataSet = new pData;
             $DataSet->AddPoint($gdata, "Serie1");
-            $DataSet->AddPoint($lblout, "Serie2");
+           
             $DataSet->AddAllSeries();
             $DataSet->SetAbsciseLabelSerie("Serie2");
 
