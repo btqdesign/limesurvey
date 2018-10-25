@@ -26,7 +26,7 @@
  *  @param string $sQuestionType The question type
  *  @return                false|string
  */
-function createChart($iQuestionID, $iSurveyID, $type = null, $lbl, $gdata, $grawdata, $cache, $sLanguageCode, $sQuestionType)
+function createChartt($iQuestionID, $iSurveyID, $type = null, $lbl, $gdata, $grawdata, $cache, $sLanguageCode, $sQuestionType)
 {
     /* This is a lazy solution to bug #6389. A better solution would be to find out how
     the "T" gets passed to this function from the statistics.js file in the first place! */
@@ -247,7 +247,7 @@ function createChart($iQuestionID, $iSurveyID, $type = null, $lbl, $gdata, $graw
             //create new 3D pie chart
             $DataSet = new pData;
             $DataSet->AddPoint($gdata, "Serie1");
-           
+            $DataSet->AddPoint($lblout, "Serie2");
             $DataSet->AddAllSeries();
             $DataSet->SetAbsciseLabelSerie("Serie2");
 
