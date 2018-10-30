@@ -18,6 +18,7 @@ http://yourdomain/survey_stat.php?sid=181952&title=Client%20Name
 try {
     $db = new PDO('mysql:host=yourhost.com;dbname=lime_db', 'user', 'pass');
 }*/
+session_start();
 
 echo $_SESSION["CONFIG"]["LS_SURVEYID"];
 
