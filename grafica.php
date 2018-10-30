@@ -167,7 +167,7 @@ while ($x < $max) {
  
  
 //Setting the title of the site (can be the name of the project or of the costumer)
-$title = "Development of the numbers of participants ";
+$title = "Grafica de participacion";
 if(isset($_GET['title'])) {
 	trim($_GET['title']);
 	htmlentities($_GET['title']);
@@ -188,7 +188,7 @@ if(isset($_GET['title'])) {
 		margin:0px;
 		width: 100%;
 		height: 100%;
-		background-color: grey;
+		background-color: white;
  
 	}
 	h1 {
@@ -258,13 +258,13 @@ if(isset($_GET['title'])) {
 if(isset($_GET['survey'])) {
 	$x = 0;
 	foreach ($participants as $key => $value) {
-		echo "<div class='stat_li'>".$titles[$x].":</div><div class='stat_re'>".$value." Participants</div><div style='clear:both;'></div>";
+		echo "<div class='stat_li'>".$titles[$x].":</div><div class='stat_re'>".$value." Participantes</div><div style='clear:both;'></div>";
 		$x++;
 	}
 }
 ?>
 </div>
-<h2>Development of the participation</h2>
+<h2>Resultados</h2>
 <div id="chart_div" style="width: 51%; height: 50%;"></div>
 </body>
 </html>
