@@ -20,7 +20,7 @@ try {
 }*/
 session_start();
 
-echo $_SESSION["CONFIG"]["LS_SURVEYID"];
+print_r($_SESSION);
 
 $config_folder = dirname(__FILE__) . '/application/config/';
 $config_file = $config_folder . 'config.php';
