@@ -18,32 +18,35 @@ http://yourdomain/survey_stat.php?sid=181952&title=Client%20Name
 try {
     $db = new PDO('mysql:host=yourhost.com;dbname=lime_db', 'user', 'pass');
 }*/
-session_start();
 
-echo "<pre>";
-print_r($_SESSION);
-	
-echo "</pre>";
+
+
 
 $config_folder = dirname(__FILE__) . '/application/config/';
 $config_file = $config_folder . 'config.php';
 define('BASEPATH', dirname(__FILE__) . '/..'); // maybe wrong but doesn't matter - constant needs to be set.
 $config = require($config_file);
 $db = $config["components"]["db"];
- 
+
 //  DB credentials
 define('DB_SERVER', "localhost");
 define('DB_USER', $db["username"]);
 define('DB_PASSWORD', $db["password"]);
 //
- 
+//
+//
+$fieldmap = createFieldMap ( $id ) ;
+echo "<pre>" ;
+print_r ( $fieldmap ) ;
+echo "</pre>" ; 
+
 try {
-  $db = new PDO($db["connectionString"] . "charset=utf8", DB_USER, DB_PASSWORD);
+	$db = new PDO($db["connectionString"] . "charset=utf8", DB_USER, DB_PASSWORD);
 } catch (PDOException $e) {
-    print "Error!: " . $e->getMessage() . "<br/>";
-    die();
+	print "Error!: " . $e->getMessage() . "<br/>";
+	die();
 }
- 
+
 function participants_pd($sid, $db) {
 	//get the number of participants for each day of the survey
 	$facts = array();
@@ -57,15 +60,15 @@ function participants_pd($sid, $db) {
 		$query = "select date(`submitdate`) AS date, count(`id`) AS number from `$survey_tbl` where `submitdate` != 'NULL' group by date(`submitdate`)";
 		$stmt = $db->query($query);
 		while($r = $stmt->fetch(PDO::FETCH_OBJ)) {
-				$facts['date'][$x] = $r->date;
-				$facts['count'][$x] = $r->number;
-				$x++;
+			$facts['date'][$x] = $r->date;
+			$facts['count'][$x] = $r->number;
+			$x++;
 		}
 		$db = null;
 		return $facts;
 	}
 }
- 
+
 function participants_sum($sid, $db) {
 	//get number of participants of the survey
 	if(!is_numeric($sid)) {
@@ -73,17 +76,17 @@ function participants_sum($sid, $db) {
 		exit();
 	}
 	else {
-	$survey_tbl = "lime_survey_".$sid;
-	$sum = "";
-	$survey_tbl = "lime_survey_".$sid;
-	$query = "select count(`id`) AS sum from `$survey_tbl` where `submitdate` != 'NULL'";
-	$stmt = $db->query($query);
-	$r = $stmt->fetch(PDO::FETCH_OBJ);
-	$sum = $r->sum;
-	return $sum;	
+		$survey_tbl = "lime_survey_".$sid;
+		$sum = "";
+		$survey_tbl = "lime_survey_".$sid;
+		$query = "select count(`id`) AS sum from `$survey_tbl` where `submitdate` != 'NULL'";
+		$stmt = $db->query($query);
+		$r = $stmt->fetch(PDO::FETCH_OBJ);
+		$sum = $r->sum;
+		return $sum;	
 	}
 }
- 
+
 function titles($sid, $db) {
 	//get the titles
 	$title = "";
@@ -95,7 +98,7 @@ function titles($sid, $db) {
 	$title = $r->surveyls_title;
 	return $title;	
 }
- 
+
 //Getting the ID's of the surveys
 if(isset($_GET['survey'])) {
 	$titles = array();
@@ -113,15 +116,15 @@ if(isset($_GET['survey'])) {
 		//Get the number of participants for each day of the survey of each survey
 		$arrayname = "survey".$value;
 		${$arrayname} = participants_pd($value,$db);
- 
+		
 		//Get number of participants for the whole periode
 		$participants[] = participants_sum($value,$db);
- 
+		
 		//Get the titles of the surveys
 		$titles[] = titles($value,$db);
 	}
 }
- 
+
 /**
 * generating the data string for the google chart
 * Will look something like that:
@@ -132,14 +135,14 @@ if(isset($_GET['survey'])) {
 * ['2013-10-11',5,14,1],
 * ['2013-10-13',2,10,1]]);
 */
- 
+
 //First the column names of the chart (in our case Day and the titles )
 $data = "['Day'";
 foreach ($titles as $key => $value) {
 	$data = $data.",'".$value."'";
 }
 $data = $data."]";
- 
+
 //Check which survey the most days
 //The x-axis of the chart will filled with the dates of this survey
 $max = 0;
@@ -151,7 +154,7 @@ foreach ($surveys as $key => $value) {
 		$max_sid = $key;
 	}
 }
- 
+
 //fill in the numbers of participants 
 $x = 0;
 while ($x < $max) {
@@ -159,7 +162,7 @@ while ($x < $max) {
 	foreach ($surveys as $key => $value) {
 		$arrayname = "survey".$value;
 		if(!empty(${$arrayname}['count'][$x])) {
-		$data = $data.",".${$arrayname}['count'][$x];
+			$data = $data.",".${$arrayname}['count'][$x];
 		}
 		else {
 			$data = $data.",0";
@@ -170,8 +173,8 @@ while ($x < $max) {
 }
 //$data contains now a string with the JS Data Array 
 //<?=$data has to be placed in the JS containing the google chart function
- 
- 
+
+
 //Setting the title of the site (can be the name of the project or of the costumer)
 $title = "Grafica de participacion ";
 if(isset($_GET['title'])) {
@@ -183,10 +186,10 @@ if(isset($_GET['title'])) {
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
- 
+	<meta charset="UTF-8">
+	
 	<title><?=$title?></title>
- 
+	
 	<style type="text/css">
 	body,html {
 		font-family: Droid Sans;
@@ -195,7 +198,7 @@ if(isset($_GET['title'])) {
 		width: 100%;
 		height: 100%;
 		background-color: white;
- 
+		
 	}
 	h1 {
 		font-size: 18px;
@@ -206,7 +209,7 @@ if(isset($_GET['title'])) {
 	}
 	h2 {
 		font-size: 15px;
- 
+		
 	}
 	.stat {
 		width: 50%;
@@ -224,53 +227,53 @@ if(isset($_GET['title'])) {
 		margin-left: 5%;
 		font-weight: bold;
 	}
-	</style>
- 
-  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-    <script type="text/javascript">
- 
+</style>
+
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript">
+	
       //set up the chart
       //check out https://developers.google.com/chart/ for more options
       google.load("visualization", "1", {packages:["corechart"]});
       google.setOnLoadCallback(drawChart);
       <?php
       if(isset($_GET['survey'])) {
-      ?>
-      function drawChart() {
- 
-        var data = google.visualization.arrayToDataTable([
-          <?=$data?>
-        ]);
- 
-        var options = {
- 
-        };
- 
-        var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
-        chart.draw(data, options);
+      	?>
+      	function drawChart() {
+      		
+      		var data = google.visualization.arrayToDataTable([
+      			<?=$data?>
+      			]);
+      		
+      		var options = {
+      			
+      		};
+      		
+      		var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+      		chart.draw(data, options);
+      	}
+      	<?php
       }
-      <?php
-  		}
       ?>
-    </script>
- 
+  </script>
+  
 </head>
- 
+
 <body>
-<h1><?=$title?></h1>
-<h2>Total</h2>
-<div class="stat">
-<?php
-if(isset($_GET['survey'])) {
-	$x = 0;
-	foreach ($participants as $key => $value) {
-		echo "<div class='stat_li'>".$titles[$x].":</div><div class='stat_re'>".$value." Participantes </div><div style='clear:both;'></div>";
-		$x++;
-	}
-}
-?>
-</div>
-<h2>Resultados</h2>
-<div id="chart_div" style="width: 51%; height: 50%;"></div>
+	<h1><?=$title?></h1>
+	<h2>Total</h2>
+	<div class="stat">
+		<?php
+		if(isset($_GET['survey'])) {
+			$x = 0;
+			foreach ($participants as $key => $value) {
+				echo "<div class='stat_li'>".$titles[$x].":</div><div class='stat_re'>".$value." Participantes </div><div style='clear:both;'></div>";
+				$x++;
+			}
+		}
+		?>
+	</div>
+	<h2>Resultados</h2>
+	<div id="chart_div" style="width: 51%; height: 50%;"></div>
 </body>
 </html>
