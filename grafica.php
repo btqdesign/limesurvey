@@ -20,7 +20,10 @@ try {
 }*/
 session_start();
 
+echo "<pre>";
 print_r($_SESSION);
+	
+echo "</pre>";
 
 $config_folder = dirname(__FILE__) . '/application/config/';
 $config_file = $config_folder . 'config.php';
