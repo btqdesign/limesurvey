@@ -19,6 +19,8 @@ try {
     $db = new PDO('mysql:host=yourhost.com;dbname=lime_db', 'user', 'pass');
 }*/
 
+echo $_SESSION["CONFIG"]["LS_SURVEYID"];
+
 $config_folder = dirname(__FILE__) . '/application/config/';
 $config_file = $config_folder . 'config.php';
 define('BASEPATH', dirname(__FILE__) . '/..'); // maybe wrong but doesn't matter - constant needs to be set.
