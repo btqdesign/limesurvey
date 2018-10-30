@@ -32,13 +32,7 @@ $db = $config["components"]["db"];
 define('DB_SERVER', "localhost");
 define('DB_USER', $db["username"]);
 define('DB_PASSWORD', $db["password"]);
-//
-//
-//
-$fieldmap = createFieldMap ( $id ) ;
-echo "<pre>" ;
-print_r ( $fieldmap ) ;
-echo "</pre>" ; 
+
 
 try {
 	$db = new PDO($db["connectionString"] . "charset=utf8", DB_USER, DB_PASSWORD);
@@ -116,10 +110,10 @@ if(isset($_GET['survey'])) {
 		//Get the number of participants for each day of the survey of each survey
 		$arrayname = "survey".$value;
 		${$arrayname} = participants_pd($value,$db);
-		
+
 		//Get number of participants for the whole periode
 		$participants[] = participants_sum($value,$db);
-		
+
 		//Get the titles of the surveys
 		$titles[] = titles($value,$db);
 	}
@@ -187,9 +181,9 @@ if(isset($_GET['title'])) {
 <html>
 <head>
 	<meta charset="UTF-8">
-	
+
 	<title><?=$title?></title>
-	
+
 	<style type="text/css">
 	body,html {
 		font-family: Droid Sans;
@@ -198,7 +192,7 @@ if(isset($_GET['title'])) {
 		width: 100%;
 		height: 100%;
 		background-color: white;
-		
+
 	}
 	h1 {
 		font-size: 18px;
@@ -209,7 +203,7 @@ if(isset($_GET['title'])) {
 	}
 	h2 {
 		font-size: 15px;
-		
+
 	}
 	.stat {
 		width: 50%;
@@ -231,7 +225,7 @@ if(isset($_GET['title'])) {
 
 <script type="text/javascript" src="https://www.google.com/jsapi"></script>
 <script type="text/javascript">
-	
+
       //set up the chart
       //check out https://developers.google.com/chart/ for more options
       google.load("visualization", "1", {packages:["corechart"]});
@@ -240,15 +234,15 @@ if(isset($_GET['title'])) {
       if(isset($_GET['survey'])) {
       	?>
       	function drawChart() {
-      		
+
       		var data = google.visualization.arrayToDataTable([
       			<?=$data?>
       			]);
-      		
+
       		var options = {
-      			
+
       		};
-      		
+
       		var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
       		chart.draw(data, options);
       	}
@@ -256,7 +250,7 @@ if(isset($_GET['title'])) {
       }
       ?>
   </script>
-  
+
 </head>
 
 <body>
