@@ -167,7 +167,7 @@ while ($x < $max) {
  
  
 //Setting the title of the site (can be the name of the project or of the costumer)
-$title = "Grafica de participacion";
+$title = "Grafica de participacion ";
 if(isset($_GET['title'])) {
 	trim($_GET['title']);
 	htmlentities($_GET['title']);
@@ -252,13 +252,13 @@ if(isset($_GET['title'])) {
  
 <body>
 <h1><?=$title?></h1>
-<h2>Overall participants</h2>
+<h2>Total</h2>
 <div class="stat">
 <?php
 if(isset($_GET['survey'])) {
 	$x = 0;
 	foreach ($participants as $key => $value) {
-		echo "<div class='stat_li'>".$titles[$x].":</div><div class='stat_re'>".$value." Participantes</div><div style='clear:both;'></div>";
+		echo "<div class='stat_li'>".$titles[$x].":</div><div class='stat_re'>".$value." Participantes </div><div style='clear:both;'></div>";
 		$x++;
 	}
 }
