@@ -1,10 +1,14 @@
 <?php
+
+phpinfo();
+exit;
+
 set_time_limit(100);
 error_reporting(E_ALL);
 ini_set('error_reporting', E_ALL);
 ini_set('display_errors',1);
 
-$ldap_HostIP = "199.244.82.56"; //IP Pública de ambiente de Calidad LDAP-UVM
+$ldap_HostIP = "45.56.126.189"; //IP Pública de ambiente de Calidad LDAP-UVM
 //$ldap_HostPt = 636; // Puerto de referencia
 $ldap_AppUsr = 'npsuvm01'; //Usuario con permisos de consulta al árbol LDAP-UVM
 $ldap_AppPwd = 'npsuvm01'; //Contraseña
