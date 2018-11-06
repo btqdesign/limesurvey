@@ -159,7 +159,7 @@ class statistics extends Survey_Common_Action
         //SORT IN NATURAL ORDER!
         usort($rows, 'groupOrderThenQuestionOrder');
 
-        //put the question information into the filter array
+        //put the question information into the filter arrb nmay
         $filters = array();
         $aGroups = array();
         $keyone = 0;
@@ -647,7 +647,7 @@ class statistics extends Survey_Common_Action
     }
 
     /**
-     * Render satistics for users
+     * Render satistics for user
      */
         public function simpleStatistics($surveyid)
         {
