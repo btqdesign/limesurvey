@@ -62,7 +62,7 @@ return array(
 	// on your webspace.
 	// LimeSurvey developers: Set this to 2 to additionally display STRICT PHP error messages and get full access to standard templates
 		'debug'=>1,
-		'debugsql'=>0, // Set this to 1 to enanble sql logging, only active when debug = 2
+		'debugsql'=>1, // Set this to 1 to enanble sql logging, only active when debug = 2
 		// Update default LimeSurvey config here
 	)
 );
