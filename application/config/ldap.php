@@ -31,7 +31,7 @@ $ldap_server[$serverId]['server'] = "ldap.idevol.net";
 // Define the TCP port on which the LDAP server is listenning
 // This should be 389 for standard LDAP servers
 // or 636 for standard LDAPS connections
-$ldap_server[$serverId]['port'] = "636";
+$ldap_server[$serverId]['port'] = "389";
 
 // Define the ldap protocol to use
 // 'ldapv2' and 'ldapv3' are supported
